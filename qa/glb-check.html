@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232b4452'/%3E%3C/svg%3E">
+<title>雨町街区 · GLB 独立读回验证</title>
+<style>
+*{box-sizing:border-box}body{margin:0;padding:28px;background:#132630;color:#ecede2;font:15px system-ui,sans-serif}h1{font-size:25px;margin:0 0 8px}p{color:#adc5cb;margin:0 0 20px}#cards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:13px}article{border:1px solid #425a63;background:#263d48;border-radius:6px;overflow:hidden}article canvas{display:block;width:100%;height:auto}article h2{font-size:16px;margin:10px 12px 5px}article p{font-size:11px;margin:0 12px 13px;line-height:1.5}#district{margin:22px auto 0;max-width:1400px}#district canvas{display:block;width:100%;height:auto}#status{color:#c7dfb5}pre{white-space:pre-wrap;color:#edafa2}#district h2{font-size:21px}
+</style>
+<h1>26 款独立模型与完整街区 · GLB 真实读回</h1>
+<p>只读取导出的 GLB 文件，使用独立 GLTFLoader 与统一检查光照。逐个渲染并释放资源。</p>
+<p id="status">正在检查文件…</p><div id="cards"></div><article id="district"></article>
+<script type="module">
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+
+const qa=window.__glbQA={ready:false,started:new Date().toISOString(),assets:[],combined:null,errors:[],resourceErrors:[],progress:'manifest'};
+const manager=new THREE.LoadingManager();manager.onError=url=>qa.resourceErrors.push(url);
+const loader=new GLTFLoader(manager);
+const renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true,alpha:false});
+renderer.setPixelRatio(1);renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.1;
+const near=(a,b,t=.025)=>Number.isFinite(a)&&Number.isFinite(b)&&Math.abs(a-b)<=t;
+const finite=v=>v.every(Number.isFinite);
+const status=document.querySelector('#status');
+
+function inventory(gltf){
+ const root=gltf.scene;root.updateMatrixWorld(true);const bounds=new THREE.Box3().setFromObject(root),size=bounds.getSize(new THREE.Vector3()),center=bounds.getCenter(new THREE.Vector3());
+ const geometries=new Set(),materials=new Set(),textures=new Set(),textureDimensions=[],instances=[];
+ let meshes=0,lines=0,vertices=0,triangles=0,finitePositions=true;
+ root.traverse(o=>{
+  if(o.isMesh&&o.visible)meshes++;if(o.isLine&&o.visible)lines++;
+  if(o.userData?.instance)instances.push({name:o.name,...o.userData,position:o.position.toArray(),actualRotation:o.rotation.toArray().slice(0,3),actualFront:new THREE.Vector3(0,0,1).applyQuaternion(o.quaternion).toArray()});
+  if(o.geometry){geometries.add(o.geometry);const p=o.geometry.attributes.position;vertices+=p?.count??0;if(o.isMesh)triangles+=(o.geometry.index?.count??p?.count??0)/3;if(p)for(let i=0;i<p.array.length;i++)if(!Number.isFinite(p.array[i])){finitePositions=false;break;}}
+  for(const m of [].concat(o.material??[])){materials.add(m);for(const v of Object.values(m))if(v?.isTexture&&!textures.has(v)){textures.add(v);const image=v.source?.data??v.image;textureDimensions.push({width:image?.width??0,height:image?.height??0,colorSpace:v.colorSpace});}}
+ });
+ const j=gltf.parser.json;
+ const externalImageURIs=(j.images??[]).filter(v=>typeof v.uri==='string'&&!v.uri.startsWith('data:')).map(v=>v.uri);
+ const externalBufferURIs=(j.buffers??[]).filter(v=>typeof v.uri==='string'&&!v.uri.startsWith('data:')).map(v=>v.uri);
+ const embeddedImages=(j.images??[]).filter(v=>Number.isInteger(v.bufferView)||v.uri?.startsWith('data:')).length;
+ const summary={meshes,lines,vertices,triangles,materials:materials.size,textures:textures.size,textureDimensions,finitePositions,instances,jsonMeshes:(j.meshes??[]).length,jsonTextures:(j.textures??[]).length,jsonImages:(j.images??[]).length,embeddedImages,externalImageURIs,externalBufferURIs,bounds:{min:bounds.min.toArray(),max:bounds.max.toArray(),size:size.toArray()}};
+ return {root,bounds,size,center,geometries,materials,textures,summary};
+}
+function commonChecks(info){
+ const s=info.summary;
+ return {finiteNonzeroBounds:finite([...s.bounds.min,...s.bounds.max,...s.bounds.size])&&s.bounds.size.every(v=>v>.1),finiteVertexPositions:s.finitePositions,containsGeometry:s.meshes>0&&s.vertices>0&&s.triangles>0,texturesDecoded:s.textureDimensions.length>0&&s.textureDimensions.every(v=>v.width>0&&v.height>0),selfContained:s.externalImageURIs.length===0&&s.externalBufferURIs.length===0&&s.embeddedImages===s.jsonImages};
+}
+function render(info,combined=false){
+ const width=combined?1400:340,height=combined?900:285;renderer.setSize(width,height);
+ const scene=new THREE.Scene();scene.background=new THREE.Color('#afc5ce');scene.add(info.root);scene.add(new THREE.HemisphereLight(0xf4f7e9,0x667e78,2.0));
+ const sun=new THREE.DirectionalLight(0xffefd3,3.0);sun.position.set(20,45,30);scene.add(sun);const fill=new THREE.DirectionalLight(0xb9d5e7,1.2);fill.position.set(-25,20,-20);scene.add(fill);
+ const camera=new THREE.PerspectiveCamera(combined?33:34,width/height,.05,500),direction=new THREE.Vector3(combined?1.08:1,combined?1.16:.65,combined?1.35:1.55).normalize();
+ let distance=info.size.length()*.75;const corners=[];for(const x of [info.bounds.min.x,info.bounds.max.x])for(const y of [info.bounds.min.y,info.bounds.max.y])for(const z of [info.bounds.min.z,info.bounds.max.z])corners.push(new THREE.Vector3(x,y,z));
+ for(let i=0;i<100;i++){camera.position.copy(info.center).addScaledVector(direction,distance);camera.lookAt(info.center);camera.updateMatrixWorld();if(corners.every(c=>{const v=c.clone().project(camera);return Math.abs(v.x)<.94&&Math.abs(v.y)<.92;}))break;distance*=1.035;}
+ renderer.render(scene,camera);const gl=renderer.getContext(),pixels=new Uint8Array(width*height*4);gl.readPixels(0,0,width,height,gl.RGBA,gl.UNSIGNED_BYTE,pixels);let nonBackgroundPixels=0;
+ for(let i=0;i<pixels.length;i+=4)if(Math.abs(pixels[i]-pixels[0])+Math.abs(pixels[i+1]-pixels[1])+Math.abs(pixels[i+2]-pixels[2])>30)nonBackgroundPixels++;
+ const snapshot=document.createElement('canvas');snapshot.width=width;snapshot.height=height;snapshot.getContext('2d').drawImage(renderer.domElement,0,0);
+ const result={calls:renderer.info.render.calls,triangles:renderer.info.render.triangles,lines:renderer.info.render.lines,nonBackgroundPixels,viewportPixels:width*height,pixelCoverage:nonBackgroundPixels/(width*height),width,height};
+ scene.remove(info.root);return {snapshot,result};
+}
+function dispose(info){for(const g of info.geometries)g.dispose();for(const m of info.materials)m.dispose();for(const t of info.textures){const image=t.source?.data??t.image;if(typeof image?.close==='function')image.close();t.dispose();}renderer.renderLists.dispose();}
+function card(def,info,snapshot,combined=false){
+ const article=combined?document.querySelector('#district'):document.createElement('article');
+ snapshot.id=combined?'district-image':`render-${def.id}`;const title=document.createElement('h2');title.textContent=combined?'完整街区 · 33 栋建筑':def.name;
+ const p=document.createElement('p');p.textContent=`${info.size.x.toFixed(2)} × ${info.size.y.toFixed(2)} × ${info.size.z.toFixed(2)} m · ${info.summary.meshes} mesh · ${info.summary.textures} textures`;
+ article.append(snapshot,title,p);if(!combined)document.querySelector('#cards').append(article);
+}
+async function assetCheck(def){
+ const gltf=await loader.loadAsync(new URL('../'+def.file,location.href).href),info=inventory(gltf);
+ try{
+  let metadata={};info.root.traverse(o=>{if(o.userData?.id===def.id)metadata=o.userData;});const b=info.bounds,size=info.size;
+  const checks={...commonChecks(info),groundAtZero:near(b.min.y,0,.035),centredWidth:b.min.x>=-def.width/2-.8&&b.max.x<=def.width/2+.8,widthMatches:size.x>=def.width*.88&&size.x<=def.width+1.6,heightMatches:b.max.y>=def.height*.88&&b.max.y<=def.height+.16,frontOrigin:b.min.z>=-def.depth-.8&&b.min.z<=-def.depth+.25&&b.max.z>=-.1&&b.max.z<=1.15,rootAxes:metadata.units==='metres'&&metadata.upAxis==='+Y'&&metadata.frontAxis==='+Z'&&metadata.origin==='front-centre-ground',nominalSize:metadata.nominalSize?.length===3&&metadata.nominalSize.every((v,i)=>near(v,[def.width,def.height,def.depth][i],1e-6)),meshManifestCount:info.summary.jsonMeshes===def.meshes,textureManifestCount:info.summary.jsonTextures===def.textures};
+  const {snapshot,result}=render(info);checks.visibleGeometry=result.calls>0&&result.triangles>0&&result.nonBackgroundPixels>1400;card(def,info,snapshot);
+  return {id:def.id,name:def.name,file:def.file,nominalSize:[def.width,def.height,def.depth],metadata,...info.summary,rendered:result,checks,passed:Object.values(checks).every(Boolean)};
+ }finally{dispose(info);}
+}
+async function combinedCheck(manifest){
+ const gltf=await loader.loadAsync(new URL('../'+manifest.combined.file,location.href).href),info=inventory(gltf);
+ try{
+  let metadata={};info.root.traverse(o=>{if(o.userData?.layout&&o.userData?.instances)metadata=o.userData;});const b=info.bounds,size=info.size;
+  const sameLot=(a,b)=>a?.asset===b.asset&&near(a.x,b.x,1e-6)&&near(a.z,b.z,1e-6)&&near(a.rotation,b.rotation,1e-6);
+  const layoutMatches=metadata.layout?.length===33&&manifest.lots.every(l=>sameLot(metadata.layout.find(v=>v.instance===l.instance),l));
+  const instanceNodesMatch=info.summary.instances.length===33&&manifest.lots.every(l=>sameLot(info.summary.instances.find(v=>v.instance===l.instance),l));
+  const actualTransformsMatch=manifest.lots.every(l=>{const n=info.summary.instances.find(v=>v.instance===l.instance);return n&&near(n.position[0],l.x)&&near(n.position[1],manifest.displayElevation)&&near(n.position[2],l.z)&&near(n.actualFront[0],Math.sin(l.rotation))&&near(n.actualFront[1],0)&&near(n.actualFront[2],Math.cos(l.rotation));});
+  const checks={...commonChecks(info),districtMetresYUp:metadata.units==='metres'&&metadata.upAxis==='+Y',declares33Instances:metadata.instances===33&&metadata.uniqueAssets===26,layoutMetadataMatchesManifest:layoutMatches,instanceNodesMatchManifest:instanceNodesMatch,actualInstanceTransformsMatch:actualTransformsMatch,fullDistrictWidth:near(size.x,89,.5),fullDistrictDepth:near(size.z,52,.5),districtPosition:near(b.min.x,-41,.5)&&near(b.max.x,48,.5)&&near(b.min.z,-26,.5)&&near(b.max.z,26,.5),substantialVisibleGeometry:info.summary.meshes>100&&info.summary.triangles>50000};
+  const {snapshot,result}=render(info,true);checks.visibleGeometry=result.calls>0&&result.triangles>50000&&result.nonBackgroundPixels>80000;card({id:'district'},info,snapshot,true);
+  return {id:'district',file:manifest.combined.file,metadata,...info.summary,rendered:result,checks,passed:Object.values(checks).every(Boolean)};
+ }finally{dispose(info);}
+}
+try{
+ const response=await fetch('../asset-manifest.json',{cache:'no-store'});if(!response.ok)throw Error(`Manifest HTTP ${response.status}`);const manifest=await response.json();
+ qa.manifest={version:manifest.version,units:manifest.units,upAxis:manifest.upAxis,frontAxis:manifest.frontAxis,origin:manifest.origin,expectedAssets:manifest.assets.length,expectedInstances:manifest.lots.length,combined:manifest.combined.file};
+ for(const def of manifest.assets){qa.progress=def.id;status.textContent=`${qa.assets.length+1}/27 正在独立读取 ${def.name}`;try{qa.assets.push(await assetCheck(def));}catch(e){qa.errors.push({id:def.id,message:e.message,stack:e.stack});}await new Promise(r=>setTimeout(r,15));}
+ qa.progress='district';status.textContent='27/27 正在读取完整街区';qa.combined=await combinedCheck(manifest);
+}catch(e){qa.errors.push({id:qa.progress,message:e.message,stack:e.stack});}
+renderer.dispose();qa.finished=new Date().toISOString();qa.ready=true;qa.progress='complete';qa.passed=qa.assets.length===26&&qa.assets.every(a=>a.passed)&&qa.combined?.passed===true&&qa.errors.length===0&&qa.resourceErrors.length===0;
+status.textContent=qa.passed?'PASS · 27 个 GLB 已真实读回，几何、坐标、纹理与渲染检查通过':'FAIL · 请查看 glb-report.json';
+if(qa.errors.length){const pre=document.createElement('pre');pre.textContent=JSON.stringify(qa.errors,null,2);document.body.append(pre);}
+</script>
+</html>

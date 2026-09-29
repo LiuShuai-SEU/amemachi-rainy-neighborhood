@@ -1,0 +1,618 @@
+{
+  "version": "2.0.0",
+  "units": "metres",
+  "upAxis": "+Y",
+  "frontAxis": "+Z",
+  "origin": "front-centre-ground",
+  "displayElevation": 0.27,
+  "assets": [
+    {
+      "id": "ramen",
+      "name": "雨宿拉面店",
+      "subtitle": "红色布檐 · 售票机 · 开放吧台",
+      "width": 4.8,
+      "depth": 4.8,
+      "height": 4,
+      "file": "assets/ramen.glb",
+      "preview": "previews/asset_ramen.png",
+      "bytes": 1224220,
+      "meshes": 256,
+      "textures": 7
+    },
+    {
+      "id": "izakaya",
+      "name": "雨音居酒屋",
+      "subtitle": "双层木格栅 · 瓦檐阳台 · 暖灯笼",
+      "width": 5.8,
+      "depth": 5.2,
+      "height": 6.76,
+      "file": "assets/izakaya.glb",
+      "preview": "previews/asset_izakaya.png",
+      "bytes": 2885184,
+      "meshes": 605,
+      "textures": 14
+    },
+    {
+      "id": "wagashi",
+      "name": "木漏日和菓子店",
+      "subtitle": "传统坡瓦顶 · 绿暖帘 · 点心橱窗",
+      "width": 5.6,
+      "depth": 4.6,
+      "height": 4.56,
+      "file": "assets/wagashi.glb",
+      "preview": "previews/asset_wagashi.png",
+      "bytes": 2021776,
+      "meshes": 403,
+      "textures": 13
+    },
+    {
+      "id": "florist",
+      "name": "花与叶花店",
+      "subtitle": "不对称绿框 · 斜玻璃雨棚 · 阶梯花架",
+      "width": 5.4,
+      "depth": 4.8,
+      "height": 3.8,
+      "file": "assets/florist.glb",
+      "preview": "previews/asset_florist.png",
+      "bytes": 3067600,
+      "meshes": 626,
+      "textures": 3
+    },
+    {
+      "id": "bookstore",
+      "name": "月灯旧书店",
+      "subtitle": "两层窄楼 · 木格窗 · 街边旧书摊",
+      "width": 4.6,
+      "depth": 5,
+      "height": 6.6,
+      "file": "assets/bookstore.glb",
+      "preview": "previews/asset_bookstore.png",
+      "bytes": 1606840,
+      "meshes": 1057,
+      "textures": 5
+    },
+    {
+      "id": "barber",
+      "name": "绿叶理发店",
+      "subtitle": "薄荷立面 · 阶梯女儿墙 · 三色理容灯",
+      "width": 4.8,
+      "depth": 4.8,
+      "height": 3.93,
+      "file": "assets/barber.glb",
+      "preview": "previews/asset_barber.png",
+      "bytes": 1070808,
+      "meshes": 461,
+      "textures": 5
+    },
+    {
+      "id": "laundry",
+      "name": "投币洗衣店",
+      "subtitle": "白瓷砖平顶 · 六台滚筒洗衣机",
+      "width": 6,
+      "depth": 5,
+      "height": 3.9,
+      "file": "assets/laundry.glb",
+      "preview": "previews/asset_laundry.png",
+      "bytes": 1668244,
+      "meshes": 536,
+      "textures": 11
+    },
+    {
+      "id": "sento",
+      "name": "钱汤澡堂",
+      "subtitle": "瓦坡顶门楼 · 砖砌高烟囱",
+      "width": 7.4,
+      "depth": 6,
+      "height": 9.4,
+      "file": "assets/sento.glb",
+      "preview": "previews/asset_sento.png",
+      "bytes": 1838640,
+      "meshes": 599,
+      "textures": 4
+    },
+    {
+      "id": "bakery",
+      "name": "雨町面包店",
+      "subtitle": "奶油砖墙 · 山形坡顶 · 出炉面包",
+      "width": 5.2,
+      "depth": 5.4,
+      "height": 6.6,
+      "file": "assets/bakery.glb",
+      "preview": "previews/asset_bakery.png",
+      "bytes": 1419012,
+      "meshes": 419,
+      "textures": 8
+    },
+    {
+      "id": "produce",
+      "name": "绿叶青果店",
+      "subtitle": "旧住宅底商 · 绿色伸缩棚 · 果蔬木箱",
+      "width": 5.6,
+      "depth": 5,
+      "height": 5.9,
+      "file": "assets/produce.glb",
+      "preview": "previews/asset_produce.png",
+      "bytes": 1516592,
+      "meshes": 527,
+      "textures": 6
+    },
+    {
+      "id": "fishmonger",
+      "name": "涟漪鲜鱼铺",
+      "subtitle": "蓝色布棚 · 瓷砖水池 · 夜间半闭卷帘",
+      "width": 4.8,
+      "depth": 5.2,
+      "height": 3.8,
+      "file": "assets/fishmonger.glb",
+      "preview": "previews/asset_fishmonger.png",
+      "bytes": 749776,
+      "meshes": 318,
+      "textures": 3
+    },
+    {
+      "id": "deli",
+      "name": "丸福熟食肉铺",
+      "subtitle": "红砖二楼 · 竖向白招牌 · 熟食陈列柜",
+      "width": 4.6,
+      "depth": 5,
+      "height": 6.1,
+      "file": "assets/deli.glb",
+      "preview": "previews/asset_deli.png",
+      "bytes": 1207332,
+      "meshes": 311,
+      "textures": 12
+    },
+    {
+      "id": "sushi",
+      "name": "雨月寿司店",
+      "subtitle": "青灰瓦檐 · 白色短帘 · 桧木寿司吧",
+      "width": 5,
+      "depth": 5.2,
+      "height": 4.5,
+      "file": "assets/sushi.glb",
+      "preview": "previews/asset_sushi.png",
+      "bytes": 1195480,
+      "meshes": 317,
+      "textures": 5
+    },
+    {
+      "id": "curry",
+      "name": "雨日咖喱食堂",
+      "subtitle": "芥黄窄楼 · 弧形布棚 · 模型菜橱窗",
+      "width": 4.5,
+      "depth": 4.8,
+      "height": 6.4,
+      "file": "assets/curry.glb",
+      "preview": "previews/asset_curry.png",
+      "bytes": 1571192,
+      "meshes": 310,
+      "textures": 15
+    },
+    {
+      "id": "convenience",
+      "name": "青葉便利店",
+      "subtitle": "转角玻璃 · 24 小时营业",
+      "width": 8,
+      "depth": 6,
+      "height": 4.1,
+      "file": "assets/convenience.glb",
+      "preview": "previews/asset_convenience.png",
+      "bytes": 913480,
+      "meshes": 380,
+      "textures": 5
+    },
+    {
+      "id": "cafe",
+      "name": "月舟昭和喫茶",
+      "subtitle": "红砖拱窗 · 手冲咖啡",
+      "width": 5.8,
+      "depth": 5.2,
+      "height": 7,
+      "file": "assets/cafe.glb",
+      "preview": "previews/asset_cafe.png",
+      "bytes": 914100,
+      "meshes": 331,
+      "textures": 4
+    },
+    {
+      "id": "pharmacy",
+      "name": "青空药局",
+      "subtitle": "白蓝瓷砖 · 社区日用品",
+      "width": 5.6,
+      "depth": 5,
+      "height": 6.5,
+      "file": "assets/pharmacy.glb",
+      "preview": "previews/asset_pharmacy.png",
+      "bytes": 890520,
+      "meshes": 397,
+      "textures": 4
+    },
+    {
+      "id": "record",
+      "name": "港唱片店",
+      "subtitle": "深蓝狭楼 · 黑胶与 City Pop",
+      "width": 4.6,
+      "depth": 4.8,
+      "height": 6.5,
+      "file": "assets/record.glb",
+      "preview": "previews/asset_record.png",
+      "bytes": 907064,
+      "meshes": 307,
+      "textures": 10
+    },
+    {
+      "id": "cycle",
+      "name": "山田自行车店",
+      "subtitle": "波纹铁棚 · 街坊维修",
+      "width": 6,
+      "depth": 5.3,
+      "height": 4.2,
+      "file": "assets/cycle.glb",
+      "preview": "previews/asset_cycle.png",
+      "bytes": 1653988,
+      "meshes": 475,
+      "textures": 4
+    },
+    {
+      "id": "arcade",
+      "name": "宇宙游戏厅",
+      "subtitle": "旧式街机 · 节制霓虹",
+      "width": 6,
+      "depth": 6,
+      "height": 7.2,
+      "file": "assets/arcade.glb",
+      "preview": "previews/asset_arcade.png",
+      "bytes": 1346568,
+      "meshes": 422,
+      "textures": 14
+    },
+    {
+      "id": "apartment",
+      "name": "雨音公寓",
+      "subtitle": "外廊楼梯 · 阳台生活",
+      "width": 7.8,
+      "depth": 6.5,
+      "height": 10.5,
+      "file": "assets/apartment.glb",
+      "preview": "previews/asset_apartment.png",
+      "bytes": 1871608,
+      "meshes": 647,
+      "textures": 10
+    },
+    {
+      "id": "townhouse",
+      "name": "森田家",
+      "subtitle": "两层住宅 · 门廊花园",
+      "width": 4.8,
+      "depth": 5.5,
+      "height": 6.9,
+      "file": "assets/townhouse.glb",
+      "preview": "previews/asset_townhouse.png",
+      "bytes": 1198008,
+      "meshes": 520,
+      "textures": 1
+    },
+    {
+      "id": "clinic",
+      "name": "雨町牙科",
+      "subtitle": "街角诊所 · 楼上办公室",
+      "width": 6.6,
+      "depth": 5.5,
+      "height": 9.2,
+      "file": "assets/clinic.glb",
+      "preview": "previews/asset_clinic.png",
+      "bytes": 1251288,
+      "meshes": 351,
+      "textures": 11
+    },
+    {
+      "id": "post",
+      "name": "雨町邮局",
+      "subtitle": "社区邮政 · 红色邮筒",
+      "width": 5,
+      "depth": 5,
+      "height": 4.4,
+      "file": "assets/post.glb",
+      "preview": "previews/asset_post.png",
+      "bytes": 971848,
+      "meshes": 397,
+      "textures": 7
+    },
+    {
+      "id": "closedshop",
+      "name": "森田杂货铺",
+      "subtitle": "打烊卷帘 · 旧木住宅",
+      "width": 4.8,
+      "depth": 5,
+      "height": 6.3,
+      "file": "assets/closedshop.glb",
+      "preview": "previews/asset_closedshop.png",
+      "bytes": 1105824,
+      "meshes": 455,
+      "textures": 4
+    },
+    {
+      "id": "shrine",
+      "name": "雨守神社",
+      "subtitle": "口袋神社 · 鸟居参道",
+      "width": 5,
+      "depth": 5,
+      "height": 4.7,
+      "file": "assets/shrine.glb",
+      "preview": "previews/asset_shrine.png",
+      "bytes": 1586652,
+      "meshes": 365,
+      "textures": 11
+    }
+  ],
+  "lots": [
+    {
+      "instance": "sento_1",
+      "asset": "sento",
+      "x": -32.3,
+      "z": -5.1,
+      "rotation": 0,
+      "zone": "market-west"
+    },
+    {
+      "instance": "wagashi_1",
+      "asset": "wagashi",
+      "x": -25.149999999999995,
+      "z": -4.9799999999999995,
+      "rotation": 0,
+      "zone": "market-west"
+    },
+    {
+      "instance": "produce_1",
+      "asset": "produce",
+      "x": -18.899999999999995,
+      "z": -5.18,
+      "rotation": 0,
+      "zone": "market-west"
+    },
+    {
+      "instance": "fishmonger_1",
+      "asset": "fishmonger",
+      "x": -13.049999999999995,
+      "z": -4.869999999999999,
+      "rotation": 0,
+      "zone": "market-west"
+    },
+    {
+      "instance": "ramen_1",
+      "asset": "ramen",
+      "x": 8.2,
+      "z": -5.1,
+      "rotation": 0,
+      "zone": "dining-east"
+    },
+    {
+      "instance": "izakaya_1",
+      "asset": "izakaya",
+      "x": 14.15,
+      "z": -4.9799999999999995,
+      "rotation": 0,
+      "zone": "dining-east"
+    },
+    {
+      "instance": "curry_1",
+      "asset": "curry",
+      "x": 19.95,
+      "z": -5.18,
+      "rotation": 0,
+      "zone": "dining-east"
+    },
+    {
+      "instance": "sushi_1",
+      "asset": "sushi",
+      "x": 25.349999999999998,
+      "z": -4.869999999999999,
+      "rotation": 0,
+      "zone": "dining-east"
+    },
+    {
+      "instance": "arcade_1",
+      "asset": "arcade",
+      "x": 31.499999999999996,
+      "z": -5.159999999999999,
+      "rotation": 0,
+      "zone": "dining-east"
+    },
+    {
+      "instance": "convenience_1",
+      "asset": "convenience",
+      "x": 39.15,
+      "z": -5,
+      "rotation": 0,
+      "zone": "dining-east"
+    },
+    {
+      "instance": "barber_1",
+      "asset": "barber",
+      "x": -34.6,
+      "z": 5.1,
+      "rotation": 3.141592653589793,
+      "zone": "daily-west"
+    },
+    {
+      "instance": "laundry_1",
+      "asset": "laundry",
+      "x": -28.55,
+      "z": 5.22,
+      "rotation": 3.141592653589793,
+      "zone": "daily-west"
+    },
+    {
+      "instance": "cycle_1",
+      "asset": "cycle",
+      "x": -21.900000000000002,
+      "z": 5.02,
+      "rotation": 3.141592653589793,
+      "zone": "daily-west"
+    },
+    {
+      "instance": "pharmacy_1",
+      "asset": "pharmacy",
+      "x": -15.450000000000003,
+      "z": 5.33,
+      "rotation": 3.141592653589793,
+      "zone": "daily-west"
+    },
+    {
+      "instance": "record_1",
+      "asset": "record",
+      "x": -9.700000000000003,
+      "z": 5.04,
+      "rotation": 3.141592653589793,
+      "zone": "daily-west"
+    },
+    {
+      "instance": "florist_1",
+      "asset": "florist",
+      "x": 8.5,
+      "z": 5.1,
+      "rotation": 3.141592653589793,
+      "zone": "shopping-east"
+    },
+    {
+      "instance": "bakery_1",
+      "asset": "bakery",
+      "x": 14.45,
+      "z": 5.22,
+      "rotation": 3.141592653589793,
+      "zone": "shopping-east"
+    },
+    {
+      "instance": "deli_1",
+      "asset": "deli",
+      "x": 20,
+      "z": 5.02,
+      "rotation": 3.141592653589793,
+      "zone": "shopping-east"
+    },
+    {
+      "instance": "bookstore_1",
+      "asset": "bookstore",
+      "x": 25.25,
+      "z": 5.33,
+      "rotation": 3.141592653589793,
+      "zone": "shopping-east"
+    },
+    {
+      "instance": "cafe_1",
+      "asset": "cafe",
+      "x": 31.099999999999998,
+      "z": 5.04,
+      "rotation": 3.141592653589793,
+      "zone": "shopping-east"
+    },
+    {
+      "instance": "apartment_1",
+      "asset": "apartment",
+      "x": -32.1,
+      "z": -17,
+      "rotation": 0,
+      "zone": "north-west"
+    },
+    {
+      "instance": "townhouse_1",
+      "asset": "townhouse",
+      "x": -24.650000000000002,
+      "z": -16.88,
+      "rotation": 0,
+      "zone": "north-west"
+    },
+    {
+      "instance": "closedshop_1",
+      "asset": "closedshop",
+      "x": -18.700000000000003,
+      "z": -17.08,
+      "rotation": 0,
+      "zone": "north-west"
+    },
+    {
+      "instance": "clinic_1",
+      "asset": "clinic",
+      "x": -11.850000000000001,
+      "z": -16.77,
+      "rotation": 0,
+      "zone": "north-west"
+    },
+    {
+      "instance": "apartment_2",
+      "asset": "apartment",
+      "x": 10.4,
+      "z": -17.2,
+      "rotation": 0,
+      "zone": "north-east"
+    },
+    {
+      "instance": "townhouse_2",
+      "asset": "townhouse",
+      "x": 17.95,
+      "z": -17.08,
+      "rotation": 0,
+      "zone": "north-east"
+    },
+    {
+      "instance": "apartment_3",
+      "asset": "apartment",
+      "x": 25.499999999999996,
+      "z": -17.279999999999998,
+      "rotation": 0,
+      "zone": "north-east"
+    },
+    {
+      "instance": "closedshop_2",
+      "asset": "closedshop",
+      "x": 33.05,
+      "z": -16.97,
+      "rotation": 0,
+      "zone": "north-east"
+    },
+    {
+      "instance": "post_1",
+      "asset": "post",
+      "x": -33.5,
+      "z": 17.2,
+      "rotation": 3.141592653589793,
+      "zone": "south-west"
+    },
+    {
+      "instance": "apartment_4",
+      "asset": "apartment",
+      "x": -25.700000000000003,
+      "z": 17.32,
+      "rotation": 3.141592653589793,
+      "zone": "south-west"
+    },
+    {
+      "instance": "townhouse_3",
+      "asset": "townhouse",
+      "x": -18.000000000000004,
+      "z": 17.12,
+      "rotation": 3.141592653589793,
+      "zone": "south-west"
+    },
+    {
+      "instance": "shrine_1",
+      "asset": "shrine",
+      "x": 13,
+      "z": 17.2,
+      "rotation": 3.141592653589793,
+      "zone": "south-east"
+    },
+    {
+      "instance": "townhouse_4",
+      "asset": "townhouse",
+      "x": 20.099999999999998,
+      "z": 17.32,
+      "rotation": 3.141592653589793,
+      "zone": "south-east"
+    }
+  ],
+  "combined": {
+    "file": "雨町完整街区.glb",
+    "bytes": 38631116
+  }
+}

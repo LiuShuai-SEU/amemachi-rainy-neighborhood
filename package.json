@@ -1,0 +1,1 @@
+{"name":"amemachi-neighborhood","version":"2.0.0","private":true,"type":"module","scripts":{"dev":"vite --host 127.0.0.1 --port 4196 --strictPort","build":"vite build && node tools/package.mjs","check":"node qa/check.mjs","export":"node tools/export-assets.mjs"},"dependencies":{"three":"0.185.1"},"devDependencies":{"playwright-core":"1.63.0","vite":"7.3.1"}}

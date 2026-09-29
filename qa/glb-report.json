@@ -1,0 +1,5771 @@
+{
+  "target": "http://127.0.0.1:4196/qa/glb-check.html",
+  "started": "2026-09-28T01:23:04.294Z",
+  "pageErrors": [],
+  "consoleErrors": [],
+  "requestFailures": [],
+  "externalRequests": [],
+  "httpErrors": [],
+  "checks": [
+    {
+      "name": "All 26 unique GLB assets and combined district loaded through GLTFLoader",
+      "pass": true,
+      "details": {
+        "assets": [
+          "ramen",
+          "izakaya",
+          "wagashi",
+          "florist",
+          "bookstore",
+          "barber",
+          "laundry",
+          "sento",
+          "bakery",
+          "produce",
+          "fishmonger",
+          "deli",
+          "sushi",
+          "curry",
+          "convenience",
+          "cafe",
+          "pharmacy",
+          "record",
+          "cycle",
+          "arcade",
+          "apartment",
+          "townhouse",
+          "clinic",
+          "post",
+          "closedshop",
+          "shrine"
+        ],
+        "combined": "雨町完整街区.glb"
+      }
+    },
+    {
+      "name": "All per-asset geometry, metre scale, coordinates, metadata and texture checks pass",
+      "pass": true,
+      "details": [
+        {
+          "id": "ramen",
+          "failed": []
+        },
+        {
+          "id": "izakaya",
+          "failed": []
+        },
+        {
+          "id": "wagashi",
+          "failed": []
+        },
+        {
+          "id": "florist",
+          "failed": []
+        },
+        {
+          "id": "bookstore",
+          "failed": []
+        },
+        {
+          "id": "barber",
+          "failed": []
+        },
+        {
+          "id": "laundry",
+          "failed": []
+        },
+        {
+          "id": "sento",
+          "failed": []
+        },
+        {
+          "id": "bakery",
+          "failed": []
+        },
+        {
+          "id": "produce",
+          "failed": []
+        },
+        {
+          "id": "fishmonger",
+          "failed": []
+        },
+        {
+          "id": "deli",
+          "failed": []
+        },
+        {
+          "id": "sushi",
+          "failed": []
+        },
+        {
+          "id": "curry",
+          "failed": []
+        },
+        {
+          "id": "convenience",
+          "failed": []
+        },
+        {
+          "id": "cafe",
+          "failed": []
+        },
+        {
+          "id": "pharmacy",
+          "failed": []
+        },
+        {
+          "id": "record",
+          "failed": []
+        },
+        {
+          "id": "cycle",
+          "failed": []
+        },
+        {
+          "id": "arcade",
+          "failed": []
+        },
+        {
+          "id": "apartment",
+          "failed": []
+        },
+        {
+          "id": "townhouse",
+          "failed": []
+        },
+        {
+          "id": "clinic",
+          "failed": []
+        },
+        {
+          "id": "post",
+          "failed": []
+        },
+        {
+          "id": "closedshop",
+          "failed": []
+        },
+        {
+          "id": "shrine",
+          "failed": []
+        }
+      ]
+    },
+    {
+      "name": "Complete district preserves 33 instances and full 89 by 52 metre footprint",
+      "pass": true,
+      "details": {
+        "failed": [],
+        "bounds": {
+          "min": [
+            -41,
+            -0.8000000059604645,
+            -26
+          ],
+          "max": [
+            48,
+            10.770000457763672,
+            26
+          ],
+          "size": [
+            89,
+            11.570000463724137,
+            52
+          ]
+        },
+        "instances": 33
+      }
+    },
+    {
+      "name": "Manifest uses metre scale, Y up and Z front",
+      "pass": true,
+      "details": {
+        "version": "2.0.0",
+        "units": "metres",
+        "upAxis": "+Y",
+        "frontAxis": "+Z",
+        "origin": "front-centre-ground",
+        "expectedAssets": 26,
+        "expectedInstances": 33,
+        "combined": "雨町完整街区.glb"
+      }
+    },
+    {
+      "name": "No GLTFLoader or decoded texture resource errors",
+      "pass": true,
+      "details": {
+        "errors": [],
+        "resourceErrors": []
+      }
+    },
+    {
+      "name": "No browser errors or failed HTTP requests",
+      "pass": true,
+      "details": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "No external network requests or GLB image/buffer references",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "browser": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+  "readback": {
+    "ready": true,
+    "started": "2026-09-28T01:23:04.695Z",
+    "assets": [
+      {
+        "id": "ramen",
+        "name": "雨宿拉面店",
+        "file": "assets/ramen.glb",
+        "nominalSize": [
+          4.8,
+          4,
+          4.8
+        ],
+        "metadata": {
+          "name": "雨宿拉面店",
+          "id": "ramen",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            4.8,
+            4,
+            4.8
+          ]
+        },
+        "meshes": 256,
+        "lines": 0,
+        "vertices": 15627,
+        "triangles": 17438,
+        "materials": 62,
+        "textures": 7,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 119,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 747,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 747,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 294,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 569,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 256,
+        "jsonTextures": 7,
+        "jsonImages": 7,
+        "embeddedImages": 7,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -2.4600000381469727,
+            -3.814697269177714e-8,
+            -4.84000002861023
+          ],
+          "max": [
+            2.4600000381469727,
+            3.9999999991059303,
+            0.8749999988079071
+          ],
+          "size": [
+            4.920000076293945,
+            4.000000037252903,
+            5.715000027418137
+          ]
+        },
+        "rendered": {
+          "calls": 263,
+          "triangles": 17452,
+          "lines": 0,
+          "nonBackgroundPixels": 32255,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.3328689370485036,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "izakaya",
+        "name": "雨音居酒屋",
+        "file": "assets/izakaya.glb",
+        "nominalSize": [
+          5.8,
+          6.76,
+          5.2
+        ],
+        "metadata": {
+          "name": "雨音居酒屋",
+          "id": "izakaya",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            5.8,
+            6.76,
+            5.2
+          ]
+        },
+        "meshes": 605,
+        "lines": 0,
+        "vertices": 41245,
+        "triangles": 35692,
+        "materials": 67,
+        "textures": 14,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 129,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 289,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 326,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 333,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 605,
+        "jsonTextures": 14,
+        "jsonImages": 14,
+        "embeddedImages": 14,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -3.0929999993741513,
+            -9.536743172944284e-8,
+            -5.424000002145767
+          ],
+          "max": [
+            3.0929999993741513,
+            6.7550000008940705,
+            0.891
+          ],
+          "size": [
+            6.1859999987483025,
+            6.755000096261503,
+            6.315000002145767
+          ]
+        },
+        "rendered": {
+          "calls": 619,
+          "triangles": 35720,
+          "lines": 0,
+          "nonBackgroundPixels": 30945,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.3193498452012384,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "wagashi",
+        "name": "木漏日和菓子店",
+        "file": "assets/wagashi.glb",
+        "nominalSize": [
+          5.6,
+          4.56,
+          4.6
+        ],
+        "metadata": {
+          "name": "木漏日和菓子店",
+          "id": "wagashi",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            5.6,
+            4.56,
+            4.6
+          ]
+        },
+        "meshes": 403,
+        "lines": 0,
+        "vertices": 24665,
+        "triangles": 20478,
+        "materials": 72,
+        "textures": 13,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 796,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 796,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 205,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 363,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 363,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 363,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 363,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 460,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 403,
+        "jsonTextures": 13,
+        "jsonImages": 13,
+        "embeddedImages": 13,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -3.0079999993741513,
+            -3.814697269177714e-8,
+            -4.834000002145767
+          ],
+          "max": [
+            3.0079999993741513,
+            4.555000000894071,
+            0.902
+          ],
+          "size": [
+            6.015999998748303,
+            4.555000039041044,
+            5.736000002145767
+          ]
+        },
+        "rendered": {
+          "calls": 416,
+          "triangles": 20504,
+          "lines": 0,
+          "nonBackgroundPixels": 30692,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.31673890608875127,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "florist",
+        "name": "花与叶花店",
+        "file": "assets/florist.glb",
+        "nominalSize": [
+          5.4,
+          3.8,
+          4.8
+        ],
+        "metadata": {
+          "name": "花与叶花店",
+          "id": "florist",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            5.4,
+            3.8,
+            4.8
+          ]
+        },
+        "meshes": 568,
+        "lines": 58,
+        "vertices": 60464,
+        "triangles": 75066,
+        "materials": 66,
+        "textures": 3,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 223,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 79,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 341,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 626,
+        "jsonTextures": 3,
+        "jsonImages": 3,
+        "embeddedImages": 3,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -2.7899999618530273,
+            -2.98023217215615e-10,
+            -4.824999904632568
+          ],
+          "max": [
+            2.7899999618530273,
+            3.7930000014603142,
+            1.0250000001490116
+          ],
+          "size": [
+            5.579999923706055,
+            3.7930000017583376,
+            5.84999990478158
+          ]
+        },
+        "rendered": {
+          "calls": 629,
+          "triangles": 75072,
+          "lines": 1128,
+          "nonBackgroundPixels": 35470,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.36604747162022705,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "bookstore",
+        "name": "月灯旧书店",
+        "file": "assets/bookstore.glb",
+        "nominalSize": [
+          4.6,
+          6.6,
+          5
+        ],
+        "metadata": {
+          "name": "月灯旧书店",
+          "id": "bookstore",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            4.6,
+            6.6,
+            5
+          ]
+        },
+        "meshes": 612,
+        "lines": 445,
+        "vertices": 26495,
+        "triangles": 8376,
+        "materials": 65,
+        "textures": 5,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 104,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 384,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 350,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 350,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 166,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 1057,
+        "jsonTextures": 5,
+        "jsonImages": 5,
+        "embeddedImages": 5,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -2.4600000381469727,
+            8.940696724635266e-10,
+            -5.200000047683716
+          ],
+          "max": [
+            2.5485000001341103,
+            6.585154718977905,
+            0.916
+          ],
+          "size": [
+            5.008500038281083,
+            6.585154718083835,
+            6.116000047683716
+          ]
+        },
+        "rendered": {
+          "calls": 1062,
+          "triangles": 8386,
+          "lines": 5340,
+          "nonBackgroundPixels": 28353,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.29260061919504643,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "barber",
+        "name": "绿叶理发店",
+        "file": "assets/barber.glb",
+        "nominalSize": [
+          4.8,
+          3.93,
+          4.8
+        ],
+        "metadata": {
+          "name": "绿叶理发店",
+          "id": "barber",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            4.8,
+            3.93,
+            4.8
+          ]
+        },
+        "meshes": 377,
+        "lines": 84,
+        "vertices": 17228,
+        "triangles": 11334,
+        "materials": 87,
+        "textures": 5,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 105,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 79,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 94,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 248,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 146,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 461,
+        "jsonTextures": 5,
+        "jsonImages": 5,
+        "embeddedImages": 5,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -2.640999995470047,
+            8.940696724635266e-10,
+            -4.850000047683716
+          ],
+          "max": [
+            2.455,
+            3.9225000008940696,
+            0.480999995470047
+          ],
+          "size": [
+            5.095999995470047,
+            3.9225,
+            5.331000043153763
+          ]
+        },
+        "rendered": {
+          "calls": 468,
+          "triangles": 11348,
+          "lines": 1344,
+          "nonBackgroundPixels": 34200,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.35294117647058826,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "laundry",
+        "name": "投币洗衣店",
+        "file": "assets/laundry.glb",
+        "nominalSize": [
+          6,
+          3.9,
+          5
+        ],
+        "metadata": {
+          "name": "投币洗衣店",
+          "id": "laundry",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            6,
+            3.9,
+            5
+          ]
+        },
+        "meshes": 523,
+        "lines": 13,
+        "vertices": 27587,
+        "triangles": 27862,
+        "materials": 74,
+        "textures": 11,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 78,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 80,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 167,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 167,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 128,
+            "height": 58,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 536,
+        "jsonTextures": 11,
+        "jsonImages": 11,
+        "embeddedImages": 11,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -3.000000003576279,
+            8.940696724635266e-10,
+            -5.483454482451082
+          ],
+          "max": [
+            3.000000003576279,
+            3.9000000059604645,
+            0.6550000071525574
+          ],
+          "size": [
+            6.000000007152558,
+            3.9000000050663948,
+            6.138454489603639
+          ]
+        },
+        "rendered": {
+          "calls": 547,
+          "triangles": 27884,
+          "lines": 156,
+          "nonBackgroundPixels": 37417,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.386140350877193,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "sento",
+        "name": "钱汤澡堂",
+        "file": "assets/sento.glb",
+        "nominalSize": [
+          7.4,
+          9.4,
+          6
+        ],
+        "metadata": {
+          "name": "钱汤澡堂",
+          "id": "sento",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            7.4,
+            9.4,
+            6
+          ]
+        },
+        "meshes": 596,
+        "lines": 3,
+        "vertices": 29922,
+        "triangles": 26606,
+        "materials": 62,
+        "textures": 4,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 218,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 848,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 256,
+            "height": 70,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 193,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 599,
+        "jsonTextures": 4,
+        "jsonImages": 4,
+        "embeddedImages": 4,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -3.905,
+            8.940696724635266e-10,
+            -6.483454482451082
+          ],
+          "max": [
+            3.9050000000000007,
+            9.40000000357628,
+            0.9699999892711639
+          ],
+          "size": [
+            7.8100000000000005,
+            9.40000000268221,
+            7.453454471722246
+          ]
+        },
+        "rendered": {
+          "calls": 603,
+          "triangles": 26614,
+          "lines": 36,
+          "nonBackgroundPixels": 18729,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.19328173374613003,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "bakery",
+        "name": "雨町面包店",
+        "file": "assets/bakery.glb",
+        "nominalSize": [
+          5.2,
+          6.6,
+          5.4
+        ],
+        "metadata": {
+          "name": "雨町面包店",
+          "id": "bakery",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            5.2,
+            6.6,
+            5.4
+          ]
+        },
+        "meshes": 419,
+        "lines": 0,
+        "vertices": 19780,
+        "triangles": 18060,
+        "materials": 72,
+        "textures": 8,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 81,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 262,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 262,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 262,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 262,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 262,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 283,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 283,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 419,
+        "jsonTextures": 8,
+        "jsonImages": 8,
+        "embeddedImages": 8,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -2.7999999991059306,
+            -4.768371586472142e-8,
+            -5.684516660392285
+          ],
+          "max": [
+            2.7999999991059306,
+            6.599999998658896,
+            0.7099999934434891
+          ],
+          "size": [
+            5.599999998211861,
+            6.600000046342612,
+            6.394516653835774
+          ]
+        },
+        "rendered": {
+          "calls": 427,
+          "triangles": 18076,
+          "lines": 0,
+          "nonBackgroundPixels": 30492,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.3146749226006192,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "produce",
+        "name": "绿叶青果店",
+        "file": "assets/produce.glb",
+        "nominalSize": [
+          5.6,
+          5.9,
+          5
+        ],
+        "metadata": {
+          "name": "绿叶青果店",
+          "id": "produce",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            5.6,
+            5.9,
+            5
+          ]
+        },
+        "meshes": 527,
+        "lines": 0,
+        "vertices": 22652,
+        "triangles": 20556,
+        "materials": 64,
+        "textures": 6,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 77,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 226,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 226,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 226,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 226,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 287,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 527,
+        "jsonTextures": 6,
+        "jsonImages": 6,
+        "embeddedImages": 6,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -2.950000047683716,
+            -4.768371586472142e-8,
+            -5.284516660392285
+          ],
+          "max": [
+            2.950000047683716,
+            5.899999999552965,
+            0.8447000000745057
+          ],
+          "size": [
+            5.900000095367432,
+            5.900000047236681,
+            6.12921666046679
+          ]
+        },
+        "rendered": {
+          "calls": 533,
+          "triangles": 20568,
+          "lines": 0,
+          "nonBackgroundPixels": 33531,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.34603715170278637,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "fishmonger",
+        "name": "涟漪鲜鱼铺",
+        "file": "assets/fishmonger.glb",
+        "nominalSize": [
+          4.8,
+          3.8,
+          5.2
+        ],
+        "metadata": {
+          "name": "涟漪鲜鱼铺",
+          "id": "fishmonger",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            4.8,
+            3.8,
+            5.2
+          ]
+        },
+        "meshes": 318,
+        "lines": 0,
+        "vertices": 9393,
+        "triangles": 6396,
+        "materials": 61,
+        "textures": 3,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 92,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 193,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 353,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 318,
+        "jsonTextures": 3,
+        "jsonImages": 3,
+        "embeddedImages": 3,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -2.549999952316284,
+            -4.768371586472142e-8,
+            -5.484516660392285
+          ],
+          "max": [
+            2.549999952316284,
+            3.7999999986588957,
+            0.8
+          ],
+          "size": [
+            5.099999904632568,
+            3.8000000463426113,
+            6.284516660392285
+          ]
+        },
+        "rendered": {
+          "calls": 321,
+          "triangles": 6402,
+          "lines": 0,
+          "nonBackgroundPixels": 31753,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.32768833849329204,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "deli",
+        "name": "丸福熟食肉铺",
+        "file": "assets/deli.glb",
+        "nominalSize": [
+          4.6,
+          6.1,
+          5
+        ],
+        "metadata": {
+          "name": "丸福熟食肉铺",
+          "id": "deli",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            4.6,
+            6.1,
+            5
+          ]
+        },
+        "meshes": 311,
+        "lines": 0,
+        "vertices": 10443,
+        "triangles": 8268,
+        "materials": 72,
+        "textures": 12,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 81,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 268,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 268,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 268,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 268,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 268,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 283,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 283,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 311,
+        "jsonTextures": 12,
+        "jsonImages": 12,
+        "embeddedImages": 12,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -2.4600000381469727,
+            -4.768371586472142e-8,
+            -5.284516660392285
+          ],
+          "max": [
+            2.4600000381469727,
+            6.100000005960465,
+            0.7773627601616959
+          ],
+          "size": [
+            4.920000076293945,
+            6.10000005364418,
+            6.06187942055398
+          ]
+        },
+        "rendered": {
+          "calls": 323,
+          "triangles": 8292,
+          "lines": 0,
+          "nonBackgroundPixels": 32582,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.33624355005159956,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "sushi",
+        "name": "雨月寿司店",
+        "file": "assets/sushi.glb",
+        "nominalSize": [
+          5,
+          4.5,
+          5.2
+        ],
+        "metadata": {
+          "name": "雨月寿司店",
+          "id": "sushi",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            5,
+            4.5,
+            5.2
+          ]
+        },
+        "meshes": 317,
+        "lines": 0,
+        "vertices": 16822,
+        "triangles": 12762,
+        "materials": 70,
+        "textures": 5,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 203,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 317,
+        "jsonTextures": 5,
+        "jsonImages": 5,
+        "embeddedImages": 5,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -2.6999999991059305,
+            -4.768371586472142e-8,
+            -5.484516660392285
+          ],
+          "max": [
+            2.6999999991059305,
+            4.499999998658897,
+            0.7199999934434891
+          ],
+          "size": [
+            5.399999998211861,
+            4.500000046342612,
+            6.204516653835774
+          ]
+        },
+        "rendered": {
+          "calls": 322,
+          "triangles": 12772,
+          "lines": 0,
+          "nonBackgroundPixels": 30662,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.3164293085655315,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "curry",
+        "name": "雨日咖喱食堂",
+        "file": "assets/curry.glb",
+        "nominalSize": [
+          4.5,
+          6.4,
+          4.8
+        ],
+        "metadata": {
+          "name": "雨日咖喱食堂",
+          "id": "curry",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            4.5,
+            6.4,
+            4.8
+          ]
+        },
+        "meshes": 310,
+        "lines": 0,
+        "vertices": 13868,
+        "triangles": 11566,
+        "materials": 97,
+        "textures": 15,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 163,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 235,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 245,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 283,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 283,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 310,
+        "jsonTextures": 15,
+        "jsonImages": 15,
+        "embeddedImages": 15,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -2.3949999809265137,
+            -4.768371586472142e-8,
+            -5.084516660392285
+          ],
+          "max": [
+            2.3949999809265137,
+            6.399999999880791,
+            0.7829999998211861
+          ],
+          "size": [
+            4.789999961853027,
+            6.4000000475645065,
+            5.867516660213471
+          ]
+        },
+        "rendered": {
+          "calls": 325,
+          "triangles": 11596,
+          "lines": 0,
+          "nonBackgroundPixels": 30402,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.31374613003095975,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "convenience",
+        "name": "青葉便利店",
+        "file": "assets/convenience.glb",
+        "nominalSize": [
+          8,
+          4.1,
+          6
+        ],
+        "metadata": {
+          "name": "青葉便利店",
+          "id": "convenience",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            8,
+            4.1,
+            6
+          ]
+        },
+        "meshes": 380,
+        "lines": 0,
+        "vertices": 12036,
+        "triangles": 7642,
+        "materials": 64,
+        "textures": 5,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 141,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 512,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 144,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 272,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 152,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 380,
+        "jsonTextures": 5,
+        "jsonImages": 5,
+        "embeddedImages": 5,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -4.089999997615815,
+            -2.3841857821338408e-8,
+            -6.111000000268221
+          ],
+          "max": [
+            4.294999999612569,
+            4.085000006556511,
+            0.62
+          ],
+          "size": [
+            8.384999997228384,
+            4.085000030398369,
+            6.731000000268221
+          ]
+        },
+        "rendered": {
+          "calls": 385,
+          "triangles": 7652,
+          "lines": 0,
+          "nonBackgroundPixels": 39865,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.4114035087719298,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "cafe",
+        "name": "月舟昭和喫茶",
+        "file": "assets/cafe.glb",
+        "nominalSize": [
+          5.8,
+          7,
+          5.2
+        ],
+        "metadata": {
+          "name": "月舟昭和喫茶",
+          "id": "cafe",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            5.8,
+            7,
+            5.2
+          ]
+        },
+        "meshes": 331,
+        "lines": 0,
+        "vertices": 12306,
+        "triangles": 9067,
+        "materials": 68,
+        "textures": 4,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 123,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 480,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 355,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 414,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 331,
+        "jsonTextures": 4,
+        "jsonImages": 4,
+        "embeddedImages": 4,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -3.015000104904175,
+            -1.6689300497141346e-9,
+            -5.311000000268221
+          ],
+          "max": [
+            3.1949999996125698,
+            6.715000001788139,
+            0.8836000072956085
+          ],
+          "size": [
+            6.210000104516745,
+            6.715000003457069,
+            6.19460000756383
+          ]
+        },
+        "rendered": {
+          "calls": 335,
+          "triangles": 9075,
+          "lines": 0,
+          "nonBackgroundPixels": 33326,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.343921568627451,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "pharmacy",
+        "name": "青空药局",
+        "file": "assets/pharmacy.glb",
+        "nominalSize": [
+          5.6,
+          6.5,
+          5
+        ],
+        "metadata": {
+          "name": "青空药局",
+          "id": "pharmacy",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            5.6,
+            6.5,
+            5
+          ]
+        },
+        "meshes": 397,
+        "lines": 0,
+        "vertices": 10122,
+        "triangles": 5648,
+        "materials": 65,
+        "textures": 4,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 97,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 163,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 140,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 397,
+        "jsonTextures": 4,
+        "jsonImages": 4,
+        "embeddedImages": 4,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -2.889999997615814,
+            8.940696724635266e-10,
+            -5.111000000268221
+          ],
+          "max": [
+            3.0949999996125697,
+            6.48500000655651,
+            0.8199999993294478
+          ],
+          "size": [
+            5.984999997228384,
+            6.485000005662441,
+            5.9309999995976685
+          ]
+        },
+        "rendered": {
+          "calls": 401,
+          "triangles": 5656,
+          "lines": 0,
+          "nonBackgroundPixels": 28500,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.29411764705882354,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "record",
+        "name": "港唱片店",
+        "file": "assets/record.glb",
+        "nominalSize": [
+          4.6,
+          6.5,
+          4.8
+        ],
+        "metadata": {
+          "name": "港唱片店",
+          "id": "record",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            4.6,
+            6.5,
+            4.8
+          ]
+        },
+        "meshes": 307,
+        "lines": 0,
+        "vertices": 10901,
+        "triangles": 9032,
+        "materials": 79,
+        "textures": 10,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 113,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 431,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 176,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 176,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 176,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 176,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 176,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 176,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 355,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 387,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 307,
+        "jsonTextures": 10,
+        "jsonImages": 10,
+        "embeddedImages": 10,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -2.389999997615814,
+            8.940696724635266e-10,
+            -4.911000000268221
+          ],
+          "max": [
+            2.5949999996125697,
+            6.48500000655651,
+            0.874
+          ],
+          "size": [
+            4.984999997228384,
+            6.485000005662441,
+            5.78500000026822
+          ]
+        },
+        "rendered": {
+          "calls": 317,
+          "triangles": 9052,
+          "lines": 0,
+          "nonBackgroundPixels": 29367,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.3030650154798762,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "cycle",
+        "name": "山田自行车店",
+        "file": "assets/cycle.glb",
+        "nominalSize": [
+          6,
+          4.2,
+          5.3
+        ],
+        "metadata": {
+          "name": "山田自行车店",
+          "id": "cycle",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            6,
+            4.2,
+            5.3
+          ]
+        },
+        "meshes": 475,
+        "lines": 0,
+        "vertices": 27586,
+        "triangles": 24792,
+        "materials": 69,
+        "textures": 4,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 99,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 65,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 699,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 442,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 475,
+        "jsonTextures": 4,
+        "jsonImages": 4,
+        "embeddedImages": 4,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -3.115000009536743,
+            0,
+            -5.411000000268221
+          ],
+          "max": [
+            3.29499999961257,
+            3.977956543142075,
+            0.8680000008642674
+          ],
+          "size": [
+            6.410000009149313,
+            3.977956543142075,
+            6.279000001132488
+          ]
+        },
+        "rendered": {
+          "calls": 479,
+          "triangles": 24800,
+          "lines": 0,
+          "nonBackgroundPixels": 33099,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.34157894736842104,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "arcade",
+        "name": "宇宙游戏厅",
+        "file": "assets/arcade.glb",
+        "nominalSize": [
+          6,
+          7.2,
+          6
+        ],
+        "metadata": {
+          "name": "宇宙游戏厅",
+          "id": "arcade",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            6,
+            7.2,
+            6
+          ]
+        },
+        "meshes": 422,
+        "lines": 0,
+        "vertices": 14733,
+        "triangles": 10504,
+        "materials": 89,
+        "textures": 14,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 96,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 910,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 910,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 910,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 910,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 262,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 262,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 262,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 262,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 262,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 262,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 262,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 614,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 496,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 422,
+        "jsonTextures": 14,
+        "jsonImages": 14,
+        "embeddedImages": 14,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -3.089999997615814,
+            -9.536743172944284e-8,
+            -6.111000000268221
+          ],
+          "max": [
+            3.29499999961257,
+            7.1850000065565105,
+            0.563
+          ],
+          "size": [
+            6.384999997228384,
+            7.185000101923942,
+            6.6740000002682205
+          ]
+        },
+        "rendered": {
+          "calls": 436,
+          "triangles": 10532,
+          "lines": 0,
+          "nonBackgroundPixels": 33583,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.34657378740970074,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "apartment",
+        "name": "雨音公寓",
+        "file": "assets/apartment.glb",
+        "nominalSize": [
+          7.8,
+          10.5,
+          6.5
+        ],
+        "metadata": {
+          "name": "雨音公寓",
+          "id": "apartment",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            7.8,
+            10.5,
+            6.5
+          ]
+        },
+        "meshes": 647,
+        "lines": 0,
+        "vertices": 25682,
+        "triangles": 21472,
+        "materials": 52,
+        "textures": 10,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 377,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 377,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 377,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 377,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 377,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 377,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 377,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 377,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 377,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 147,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 647,
+        "jsonTextures": 10,
+        "jsonImages": 10,
+        "embeddedImages": 10,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -3.949000000804663,
+            9.536743128535363e-8,
+            -7.075000000149012
+          ],
+          "max": [
+            4.095000000000001,
+            10.500000001192094,
+            0.7709999997764826
+          ],
+          "size": [
+            8.044000000804663,
+            10.499999905824662,
+            7.845999999925494
+          ]
+        },
+        "rendered": {
+          "calls": 657,
+          "triangles": 21492,
+          "lines": 0,
+          "nonBackgroundPixels": 30693,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.31674922600619193,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "townhouse",
+        "name": "森田家",
+        "file": "assets/townhouse.glb",
+        "nominalSize": [
+          4.8,
+          6.9,
+          5.5
+        ],
+        "metadata": {
+          "name": "森田家",
+          "id": "townhouse",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            4.8,
+            6.9,
+            5.5
+          ]
+        },
+        "meshes": 520,
+        "lines": 0,
+        "vertices": 16820,
+        "triangles": 12910,
+        "materials": 48,
+        "textures": 1,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 496,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 520,
+        "jsonTextures": 1,
+        "jsonImages": 1,
+        "embeddedImages": 1,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -2.6399999986588956,
+            -5.245208734017126e-8,
+            -5.937000000104308
+          ],
+          "max": [
+            2.677000000104308,
+            6.900000001490116,
+            1.0289999998882413
+          ],
+          "size": [
+            5.316999998763204,
+            6.900000053942203,
+            6.965999999992549
+          ]
+        },
+        "rendered": {
+          "calls": 521,
+          "triangles": 12912,
+          "lines": 0,
+          "nonBackgroundPixels": 29132,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.30063983488132096,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "clinic",
+        "name": "雨町牙科",
+        "file": "assets/clinic.glb",
+        "nominalSize": [
+          6.6,
+          9.2,
+          5.5
+        ],
+        "metadata": {
+          "name": "雨町牙科",
+          "id": "clinic",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            6.6,
+            9.2,
+            5.5
+          ]
+        },
+        "meshes": 351,
+        "lines": 0,
+        "vertices": 12266,
+        "triangles": 9982,
+        "materials": 64,
+        "textures": 11,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 102,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 60,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 322,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 561,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 102,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 589,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 384,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 351,
+        "jsonTextures": 11,
+        "jsonImages": 11,
+        "embeddedImages": 11,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -3.499,
+            -1.3351440397713077e-7,
+            -5.857000000104308
+          ],
+          "max": [
+            3.499,
+            9.19999999642372,
+            0.9366160997222177
+          ],
+          "size": [
+            6.998,
+            9.200000129938125,
+            6.793616099826526
+          ]
+        },
+        "rendered": {
+          "calls": 362,
+          "triangles": 10004,
+          "lines": 0,
+          "nonBackgroundPixels": 31001,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.3199277605779154,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "post",
+        "name": "雨町邮局",
+        "file": "assets/post.glb",
+        "nominalSize": [
+          5,
+          4.4,
+          5
+        ],
+        "metadata": {
+          "name": "雨町邮局",
+          "id": "post",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            5,
+            4.4,
+            5
+          ]
+        },
+        "meshes": 397,
+        "lines": 0,
+        "vertices": 10918,
+        "triangles": 6894,
+        "materials": 55,
+        "textures": 7,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 97,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 706,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 760,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 760,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 760,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 137,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 397,
+        "jsonTextures": 7,
+        "jsonImages": 7,
+        "embeddedImages": 7,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -2.7849999986588956,
+            -2.98023217215615e-10,
+            -5.2
+          ],
+          "max": [
+            2.787000000104308,
+            4.400000001490115,
+            0.9499999916553498
+          ],
+          "size": [
+            5.571999998763204,
+            4.400000001788138,
+            6.14999999165535
+          ]
+        },
+        "rendered": {
+          "calls": 404,
+          "triangles": 6908,
+          "lines": 0,
+          "nonBackgroundPixels": 31047,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.32040247678018574,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "closedshop",
+        "name": "森田杂货铺",
+        "file": "assets/closedshop.glb",
+        "nominalSize": [
+          4.8,
+          6.3,
+          5
+        ],
+        "metadata": {
+          "name": "森田杂货铺",
+          "id": "closedshop",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            4.8,
+            6.3,
+            5
+          ]
+        },
+        "meshes": 455,
+        "lines": 0,
+        "vertices": 14188,
+        "triangles": 10712,
+        "materials": 45,
+        "textures": 4,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 96,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 500,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 400,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 132,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 455,
+        "jsonTextures": 4,
+        "jsonImages": 4,
+        "embeddedImages": 4,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -2.6549999986588957,
+            -9.53674295089968e-9,
+            -5.269999942779541
+          ],
+          "max": [
+            2.677000000104308,
+            6.300000001490116,
+            0.8103252698015422
+          ],
+          "size": [
+            5.331999998763203,
+            6.300000011026859,
+            6.080325212581084
+          ]
+        },
+        "rendered": {
+          "calls": 459,
+          "triangles": 10720,
+          "lines": 0,
+          "nonBackgroundPixels": 30372,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.31343653250773995,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      },
+      {
+        "id": "shrine",
+        "name": "雨守神社",
+        "file": "assets/shrine.glb",
+        "nominalSize": [
+          5,
+          4.7,
+          5
+        ],
+        "metadata": {
+          "name": "雨守神社",
+          "id": "shrine",
+          "units": "metres",
+          "upAxis": "+Y",
+          "frontAxis": "+Z",
+          "origin": "front-centre-ground",
+          "nominalSize": [
+            5,
+            4.7,
+            5
+          ]
+        },
+        "meshes": 365,
+        "lines": 0,
+        "vertices": 12540,
+        "triangles": 9542,
+        "materials": 63,
+        "textures": 11,
+        "textureDimensions": [
+          {
+            "width": 1024,
+            "height": 533,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 576,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 1024,
+            "colorSpace": "srgb"
+          },
+          {
+            "width": 1024,
+            "height": 945,
+            "colorSpace": "srgb"
+          }
+        ],
+        "finitePositions": true,
+        "instances": [],
+        "jsonMeshes": 365,
+        "jsonTextures": 11,
+        "jsonImages": 11,
+        "embeddedImages": 11,
+        "externalImageURIs": [],
+        "externalBufferURIs": [],
+        "bounds": {
+          "min": [
+            -2.541843467622363,
+            0.014999999105930334,
+            -4.95999999910593
+          ],
+          "max": [
+            2.5774921540035085,
+            4.699999995231629,
+            0.16500000476837157
+          ],
+          "size": [
+            5.119335621625872,
+            4.684999996125699,
+            5.125000003874302
+          ]
+        },
+        "rendered": {
+          "calls": 376,
+          "triangles": 9564,
+          "lines": 0,
+          "nonBackgroundPixels": 24641,
+          "viewportPixels": 96900,
+          "pixelCoverage": 0.2542930856553148,
+          "width": 340,
+          "height": 285
+        },
+        "checks": {
+          "finiteNonzeroBounds": true,
+          "finiteVertexPositions": true,
+          "containsGeometry": true,
+          "texturesDecoded": true,
+          "selfContained": true,
+          "groundAtZero": true,
+          "centredWidth": true,
+          "widthMatches": true,
+          "heightMatches": true,
+          "frontOrigin": true,
+          "rootAxes": true,
+          "nominalSize": true,
+          "meshManifestCount": true,
+          "textureManifestCount": true,
+          "visibleGeometry": true
+        },
+        "passed": true
+      }
+    ],
+    "combined": {
+      "id": "district",
+      "file": "雨町完整街区.glb",
+      "metadata": {
+        "name": "雨町完整街区",
+        "units": "metres",
+        "upAxis": "+Y",
+        "instances": 33,
+        "uniqueAssets": 26,
+        "layout": [
+          {
+            "instance": "sento_1",
+            "asset": "sento",
+            "x": -32.3,
+            "z": -5.1,
+            "rotation": 0,
+            "zone": "market-west"
+          },
+          {
+            "instance": "wagashi_1",
+            "asset": "wagashi",
+            "x": -25.149999999999995,
+            "z": -4.9799999999999995,
+            "rotation": 0,
+            "zone": "market-west"
+          },
+          {
+            "instance": "produce_1",
+            "asset": "produce",
+            "x": -18.899999999999995,
+            "z": -5.18,
+            "rotation": 0,
+            "zone": "market-west"
+          },
+          {
+            "instance": "fishmonger_1",
+            "asset": "fishmonger",
+            "x": -13.049999999999995,
+            "z": -4.869999999999999,
+            "rotation": 0,
+            "zone": "market-west"
+          },
+          {
+            "instance": "ramen_1",
+            "asset": "ramen",
+            "x": 8.2,
+            "z": -5.1,
+            "rotation": 0,
+            "zone": "dining-east"
+          },
+          {
+            "instance": "izakaya_1",
+            "asset": "izakaya",
+            "x": 14.15,
+            "z": -4.9799999999999995,
+            "rotation": 0,
+            "zone": "dining-east"
+          },
+          {
+            "instance": "curry_1",
+            "asset": "curry",
+            "x": 19.95,
+            "z": -5.18,
+            "rotation": 0,
+            "zone": "dining-east"
+          },
+          {
+            "instance": "sushi_1",
+            "asset": "sushi",
+            "x": 25.349999999999998,
+            "z": -4.869999999999999,
+            "rotation": 0,
+            "zone": "dining-east"
+          },
+          {
+            "instance": "arcade_1",
+            "asset": "arcade",
+            "x": 31.499999999999996,
+            "z": -5.159999999999999,
+            "rotation": 0,
+            "zone": "dining-east"
+          },
+          {
+            "instance": "convenience_1",
+            "asset": "convenience",
+            "x": 39.15,
+            "z": -5,
+            "rotation": 0,
+            "zone": "dining-east"
+          },
+          {
+            "instance": "barber_1",
+            "asset": "barber",
+            "x": -34.6,
+            "z": 5.1,
+            "rotation": 3.141592653589793,
+            "zone": "daily-west"
+          },
+          {
+            "instance": "laundry_1",
+            "asset": "laundry",
+            "x": -28.55,
+            "z": 5.22,
+            "rotation": 3.141592653589793,
+            "zone": "daily-west"
+          },
+          {
+            "instance": "cycle_1",
+            "asset": "cycle",
+            "x": -21.900000000000002,
+            "z": 5.02,
+            "rotation": 3.141592653589793,
+            "zone": "daily-west"
+          },
+          {
+            "instance": "pharmacy_1",
+            "asset": "pharmacy",
+            "x": -15.450000000000003,
+            "z": 5.33,
+            "rotation": 3.141592653589793,
+            "zone": "daily-west"
+          },
+          {
+            "instance": "record_1",
+            "asset": "record",
+            "x": -9.700000000000003,
+            "z": 5.04,
+            "rotation": 3.141592653589793,
+            "zone": "daily-west"
+          },
+          {
+            "instance": "florist_1",
+            "asset": "florist",
+            "x": 8.5,
+            "z": 5.1,
+            "rotation": 3.141592653589793,
+            "zone": "shopping-east"
+          },
+          {
+            "instance": "bakery_1",
+            "asset": "bakery",
+            "x": 14.45,
+            "z": 5.22,
+            "rotation": 3.141592653589793,
+            "zone": "shopping-east"
+          },
+          {
+            "instance": "deli_1",
+            "asset": "deli",
+            "x": 20,
+            "z": 5.02,
+            "rotation": 3.141592653589793,
+            "zone": "shopping-east"
+          },
+          {
+            "instance": "bookstore_1",
+            "asset": "bookstore",
+            "x": 25.25,
+            "z": 5.33,
+            "rotation": 3.141592653589793,
+            "zone": "shopping-east"
+          },
+          {
+            "instance": "cafe_1",
+            "asset": "cafe",
+            "x": 31.099999999999998,
+            "z": 5.04,
+            "rotation": 3.141592653589793,
+            "zone": "shopping-east"
+          },
+          {
+            "instance": "apartment_1",
+            "asset": "apartment",
+            "x": -32.1,
+            "z": -17,
+            "rotation": 0,
+            "zone": "north-west"
+          },
+          {
+            "instance": "townhouse_1",
+            "asset": "townhouse",
+            "x": -24.650000000000002,
+            "z": -16.88,
+            "rotation": 0,
+            "zone": "north-west"
+          },
+          {
+            "instance": "closedshop_1",
+            "asset": "closedshop",
+            "x": -18.700000000000003,
+            "z": -17.08,
+            "rotation": 0,
+            "zone": "north-west"
+          },
+          {
+            "instance": "clinic_1",
+            "asset": "clinic",
+            "x": -11.850000000000001,
+            "z": -16.77,
+            "rotation": 0,
+            "zone": "north-west"
+          },
+          {
+            "instance": "apartment_2",
+            "asset": "apartment",
+            "x": 10.4,
+            "z": -17.2,
+            "rotation": 0,
+            "zone": "north-east"
+          },
+          {
+            "instance": "townhouse_2",
+            "asset": "townhouse",
+            "x": 17.95,
+            "z": -17.08,
+            "rotation": 0,
+            "zone": "north-east"
+          },
+          {
+            "instance": "apartment_3",
+            "asset": "apartment",
+            "x": 25.499999999999996,
+            "z": -17.279999999999998,
+            "rotation": 0,
+            "zone": "north-east"
+          },
+          {
+            "instance": "closedshop_2",
+            "asset": "closedshop",
+            "x": 33.05,
+            "z": -16.97,
+            "rotation": 0,
+            "zone": "north-east"
+          },
+          {
+            "instance": "post_1",
+            "asset": "post",
+            "x": -33.5,
+            "z": 17.2,
+            "rotation": 3.141592653589793,
+            "zone": "south-west"
+          },
+          {
+            "instance": "apartment_4",
+            "asset": "apartment",
+            "x": -25.700000000000003,
+            "z": 17.32,
+            "rotation": 3.141592653589793,
+            "zone": "south-west"
+          },
+          {
+            "instance": "townhouse_3",
+            "asset": "townhouse",
+            "x": -18.000000000000004,
+            "z": 17.12,
+            "rotation": 3.141592653589793,
+            "zone": "south-west"
+          },
+          {
+            "instance": "shrine_1",
+            "asset": "shrine",
+            "x": 13,
+            "z": 17.2,
+            "rotation": 3.141592653589793,
+            "zone": "south-east"
+          },
+          {
+            "instance": "townhouse_4",
+            "asset": "townhouse",
+            "x": 20.099999999999998,
+            "z": 17.32,
+            "rotation": 3.141592653589793,
+            "zone": "south-east"
+          }
+        ]
+      },
+      "meshes": 1826,
+      "lines": 51,
+      "vertices": 776609,
+      "triangles": 648783,
+      "materials": 1616,
+      "textures": 246,
+      "textureDimensions": [
+        {
+          "width": 1024,
+          "height": 218,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 848,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 256,
+          "height": 70,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 193,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 796,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 796,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 205,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 363,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 363,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 363,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 363,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 460,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 77,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 226,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 226,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 226,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 226,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 287,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 92,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 193,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 353,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 119,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 747,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 747,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 294,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 569,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 129,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 289,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 326,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 333,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 163,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 235,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 245,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 283,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 283,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 203,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 96,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 910,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 910,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 910,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 910,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 262,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 262,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 262,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 262,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 262,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 262,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 262,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 614,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 496,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 141,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 512,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 144,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 272,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 152,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 105,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 79,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 94,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 248,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 146,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 78,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 80,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 64,
+          "height": 64,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 64,
+          "height": 64,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 64,
+          "height": 64,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 64,
+          "height": 64,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 64,
+          "height": 64,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 64,
+          "height": 64,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 167,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 167,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 128,
+          "height": 58,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 99,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 65,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 699,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 442,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 97,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 163,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 140,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 113,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 431,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 176,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 176,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 176,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 176,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 176,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 176,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 355,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 387,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 223,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 79,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 341,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 81,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 262,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 262,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 262,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 262,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 262,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 283,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 283,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 81,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 268,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 268,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 268,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 268,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 268,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 283,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 283,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 104,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 384,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 350,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 350,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 166,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 123,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 480,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 355,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 414,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 147,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 496,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 96,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 500,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 400,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 132,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 102,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 60,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 322,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 561,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 102,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 589,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 384,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 147,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 496,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 147,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 96,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 500,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 400,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 132,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 97,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 706,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 760,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 760,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 760,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 137,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 377,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 147,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 496,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 533,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 576,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 945,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 496,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 445,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 99,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 99,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 461,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 219,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 219,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 219,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 878,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 878,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 878,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 878,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "colorSpace": "srgb"
+        },
+        {
+          "width": 1024,
+          "height": 298,
+          "colorSpace": "srgb"
+        }
+      ],
+      "finitePositions": true,
+      "instances": [
+        {
+          "name": "钱汤澡堂",
+          "instance": "sento_1",
+          "asset": "sento",
+          "x": -32.3,
+          "z": -5.1,
+          "rotation": 0,
+          "zone": "market-west",
+          "position": [
+            -32.3,
+            0.27,
+            -5.1
+          ],
+          "actualRotation": [
+            0,
+            0,
+            0
+          ],
+          "actualFront": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "木漏日和菓子店",
+          "instance": "wagashi_1",
+          "asset": "wagashi",
+          "x": -25.149999999999995,
+          "z": -4.9799999999999995,
+          "rotation": 0,
+          "zone": "market-west",
+          "position": [
+            -25.149999999999995,
+            0.27,
+            -4.9799999999999995
+          ],
+          "actualRotation": [
+            0,
+            0,
+            0
+          ],
+          "actualFront": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "绿叶青果店",
+          "instance": "produce_1",
+          "asset": "produce",
+          "x": -18.899999999999995,
+          "z": -5.18,
+          "rotation": 0,
+          "zone": "market-west",
+          "position": [
+            -18.899999999999995,
+            0.27,
+            -5.18
+          ],
+          "actualRotation": [
+            0,
+            0,
+            0
+          ],
+          "actualFront": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "涟漪鲜鱼铺",
+          "instance": "fishmonger_1",
+          "asset": "fishmonger",
+          "x": -13.049999999999995,
+          "z": -4.869999999999999,
+          "rotation": 0,
+          "zone": "market-west",
+          "position": [
+            -13.049999999999995,
+            0.27,
+            -4.869999999999999
+          ],
+          "actualRotation": [
+            0,
+            0,
+            0
+          ],
+          "actualFront": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "雨宿拉面店",
+          "instance": "ramen_1",
+          "asset": "ramen",
+          "x": 8.2,
+          "z": -5.1,
+          "rotation": 0,
+          "zone": "dining-east",
+          "position": [
+            8.2,
+            0.27,
+            -5.1
+          ],
+          "actualRotation": [
+            0,
+            0,
+            0
+          ],
+          "actualFront": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "雨音居酒屋",
+          "instance": "izakaya_1",
+          "asset": "izakaya",
+          "x": 14.15,
+          "z": -4.9799999999999995,
+          "rotation": 0,
+          "zone": "dining-east",
+          "position": [
+            14.15,
+            0.27,
+            -4.9799999999999995
+          ],
+          "actualRotation": [
+            0,
+            0,
+            0
+          ],
+          "actualFront": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "雨日咖喱食堂",
+          "instance": "curry_1",
+          "asset": "curry",
+          "x": 19.95,
+          "z": -5.18,
+          "rotation": 0,
+          "zone": "dining-east",
+          "position": [
+            19.95,
+            0.27,
+            -5.18
+          ],
+          "actualRotation": [
+            0,
+            0,
+            0
+          ],
+          "actualFront": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "雨月寿司店",
+          "instance": "sushi_1",
+          "asset": "sushi",
+          "x": 25.349999999999998,
+          "z": -4.869999999999999,
+          "rotation": 0,
+          "zone": "dining-east",
+          "position": [
+            25.349999999999998,
+            0.27,
+            -4.869999999999999
+          ],
+          "actualRotation": [
+            0,
+            0,
+            0
+          ],
+          "actualFront": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "宇宙游戏厅",
+          "instance": "arcade_1",
+          "asset": "arcade",
+          "x": 31.499999999999996,
+          "z": -5.159999999999999,
+          "rotation": 0,
+          "zone": "dining-east",
+          "position": [
+            31.499999999999996,
+            0.27,
+            -5.159999999999999
+          ],
+          "actualRotation": [
+            0,
+            0,
+            0
+          ],
+          "actualFront": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "青葉便利店",
+          "instance": "convenience_1",
+          "asset": "convenience",
+          "x": 39.15,
+          "z": -5,
+          "rotation": 0,
+          "zone": "dining-east",
+          "position": [
+            39.15,
+            0.27,
+            -5
+          ],
+          "actualRotation": [
+            0,
+            0,
+            0
+          ],
+          "actualFront": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "绿叶理发店",
+          "instance": "barber_1",
+          "asset": "barber",
+          "x": -34.6,
+          "z": 5.1,
+          "rotation": 3.141592653589793,
+          "zone": "daily-west",
+          "position": [
+            -34.6,
+            0.27,
+            5.1
+          ],
+          "actualRotation": [
+            -3.141592653589793,
+            1.2246467991473532e-16,
+            -3.141592653589793
+          ],
+          "actualFront": [
+            1.2246467991473532e-16,
+            0,
+            -1
+          ]
+        },
+        {
+          "name": "投币洗衣店",
+          "instance": "laundry_1",
+          "asset": "laundry",
+          "x": -28.55,
+          "z": 5.22,
+          "rotation": 3.141592653589793,
+          "zone": "daily-west",
+          "position": [
+            -28.55,
+            0.27,
+            5.22
+          ],
+          "actualRotation": [
+            -3.141592653589793,
+            1.2246467991473532e-16,
+            -3.141592653589793
+          ],
+          "actualFront": [
+            1.2246467991473532e-16,
+            0,
+            -1
+          ]
+        },
+        {
+          "name": "山田自行车店",
+          "instance": "cycle_1",
+          "asset": "cycle",
+          "x": -21.900000000000002,
+          "z": 5.02,
+          "rotation": 3.141592653589793,
+          "zone": "daily-west",
+          "position": [
+            -21.900000000000002,
+            0.27,
+            5.02
+          ],
+          "actualRotation": [
+            -3.141592653589793,
+            1.2246467991473532e-16,
+            -3.141592653589793
+          ],
+          "actualFront": [
+            1.2246467991473532e-16,
+            0,
+            -1
+          ]
+        },
+        {
+          "name": "青空药局",
+          "instance": "pharmacy_1",
+          "asset": "pharmacy",
+          "x": -15.450000000000003,
+          "z": 5.33,
+          "rotation": 3.141592653589793,
+          "zone": "daily-west",
+          "position": [
+            -15.450000000000003,
+            0.27,
+            5.33
+          ],
+          "actualRotation": [
+            -3.141592653589793,
+            1.2246467991473532e-16,
+            -3.141592653589793
+          ],
+          "actualFront": [
+            1.2246467991473532e-16,
+            0,
+            -1
+          ]
+        },
+        {
+          "name": "港唱片店",
+          "instance": "record_1",
+          "asset": "record",
+          "x": -9.700000000000003,
+          "z": 5.04,
+          "rotation": 3.141592653589793,
+          "zone": "daily-west",
+          "position": [
+            -9.700000000000003,
+            0.27,
+            5.04
+          ],
+          "actualRotation": [
+            -3.141592653589793,
+            1.2246467991473532e-16,
+            -3.141592653589793
+          ],
+          "actualFront": [
+            1.2246467991473532e-16,
+            0,
+            -1
+          ]
+        },
+        {
+          "name": "花与叶花店",
+          "instance": "florist_1",
+          "asset": "florist",
+          "x": 8.5,
+          "z": 5.1,
+          "rotation": 3.141592653589793,
+          "zone": "shopping-east",
+          "position": [
+            8.5,
+            0.27,
+            5.1
+          ],
+          "actualRotation": [
+            -3.141592653589793,
+            1.2246467991473532e-16,
+            -3.141592653589793
+          ],
+          "actualFront": [
+            1.2246467991473532e-16,
+            0,
+            -1
+          ]
+        },
+        {
+          "name": "雨町面包店",
+          "instance": "bakery_1",
+          "asset": "bakery",
+          "x": 14.45,
+          "z": 5.22,
+          "rotation": 3.141592653589793,
+          "zone": "shopping-east",
+          "position": [
+            14.45,
+            0.27,
+            5.22
+          ],
+          "actualRotation": [
+            -3.141592653589793,
+            1.2246467991473532e-16,
+            -3.141592653589793
+          ],
+          "actualFront": [
+            1.2246467991473532e-16,
+            0,
+            -1
+          ]
+        },
+        {
+          "name": "丸福熟食肉铺",
+          "instance": "deli_1",
+          "asset": "deli",
+          "x": 20,
+          "z": 5.02,
+          "rotation": 3.141592653589793,
+          "zone": "shopping-east",
+          "position": [
+            20,
+            0.27,
+            5.02
+          ],
+          "actualRotation": [
+            -3.141592653589793,
+            1.2246467991473532e-16,
+            -3.141592653589793
+          ],
+          "actualFront": [
+            1.2246467991473532e-16,
+            0,
+            -1
+          ]
+        },
+        {
+          "name": "月灯旧书店",
+          "instance": "bookstore_1",
+          "asset": "bookstore",
+          "x": 25.25,
+          "z": 5.33,
+          "rotation": 3.141592653589793,
+          "zone": "shopping-east",
+          "position": [
+            25.25,
+            0.27,
+            5.33
+          ],
+          "actualRotation": [
+            -3.141592653589793,
+            1.2246467991473532e-16,
+            -3.141592653589793
+          ],
+          "actualFront": [
+            1.2246467991473532e-16,
+            0,
+            -1
+          ]
+        },
+        {
+          "name": "月舟昭和喫茶",
+          "instance": "cafe_1",
+          "asset": "cafe",
+          "x": 31.099999999999998,
+          "z": 5.04,
+          "rotation": 3.141592653589793,
+          "zone": "shopping-east",
+          "position": [
+            31.099999999999998,
+            0.27,
+            5.04
+          ],
+          "actualRotation": [
+            -3.141592653589793,
+            1.2246467991473532e-16,
+            -3.141592653589793
+          ],
+          "actualFront": [
+            1.2246467991473532e-16,
+            0,
+            -1
+          ]
+        },
+        {
+          "name": "雨音公寓",
+          "instance": "apartment_1",
+          "asset": "apartment",
+          "x": -32.1,
+          "z": -17,
+          "rotation": 0,
+          "zone": "north-west",
+          "position": [
+            -32.1,
+            0.27,
+            -17
+          ],
+          "actualRotation": [
+            0,
+            0,
+            0
+          ],
+          "actualFront": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "森田家",
+          "instance": "townhouse_1",
+          "asset": "townhouse",
+          "x": -24.650000000000002,
+          "z": -16.88,
+          "rotation": 0,
+          "zone": "north-west",
+          "position": [
+            -24.650000000000002,
+            0.27,
+            -16.88
+          ],
+          "actualRotation": [
+            0,
+            0,
+            0
+          ],
+          "actualFront": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "森田杂货铺",
+          "instance": "closedshop_1",
+          "asset": "closedshop",
+          "x": -18.700000000000003,
+          "z": -17.08,
+          "rotation": 0,
+          "zone": "north-west",
+          "position": [
+            -18.700000000000003,
+            0.27,
+            -17.08
+          ],
+          "actualRotation": [
+            0,
+            0,
+            0
+          ],
+          "actualFront": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "雨町牙科",
+          "instance": "clinic_1",
+          "asset": "clinic",
+          "x": -11.850000000000001,
+          "z": -16.77,
+          "rotation": 0,
+          "zone": "north-west",
+          "position": [
+            -11.850000000000001,
+            0.27,
+            -16.77
+          ],
+          "actualRotation": [
+            0,
+            0,
+            0
+          ],
+          "actualFront": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "雨音公寓",
+          "instance": "apartment_2",
+          "asset": "apartment",
+          "x": 10.4,
+          "z": -17.2,
+          "rotation": 0,
+          "zone": "north-east",
+          "position": [
+            10.4,
+            0.27,
+            -17.2
+          ],
+          "actualRotation": [
+            0,
+            0,
+            0
+          ],
+          "actualFront": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "森田家",
+          "instance": "townhouse_2",
+          "asset": "townhouse",
+          "x": 17.95,
+          "z": -17.08,
+          "rotation": 0,
+          "zone": "north-east",
+          "position": [
+            17.95,
+            0.27,
+            -17.08
+          ],
+          "actualRotation": [
+            0,
+            0,
+            0
+          ],
+          "actualFront": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "雨音公寓",
+          "instance": "apartment_3",
+          "asset": "apartment",
+          "x": 25.499999999999996,
+          "z": -17.279999999999998,
+          "rotation": 0,
+          "zone": "north-east",
+          "position": [
+            25.499999999999996,
+            0.27,
+            -17.279999999999998
+          ],
+          "actualRotation": [
+            0,
+            0,
+            0
+          ],
+          "actualFront": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "森田杂货铺",
+          "instance": "closedshop_2",
+          "asset": "closedshop",
+          "x": 33.05,
+          "z": -16.97,
+          "rotation": 0,
+          "zone": "north-east",
+          "position": [
+            33.05,
+            0.27,
+            -16.97
+          ],
+          "actualRotation": [
+            0,
+            0,
+            0
+          ],
+          "actualFront": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "雨町邮局",
+          "instance": "post_1",
+          "asset": "post",
+          "x": -33.5,
+          "z": 17.2,
+          "rotation": 3.141592653589793,
+          "zone": "south-west",
+          "position": [
+            -33.5,
+            0.27,
+            17.2
+          ],
+          "actualRotation": [
+            -3.141592653589793,
+            1.2246467991473532e-16,
+            -3.141592653589793
+          ],
+          "actualFront": [
+            1.2246467991473532e-16,
+            0,
+            -1
+          ]
+        },
+        {
+          "name": "雨音公寓",
+          "instance": "apartment_4",
+          "asset": "apartment",
+          "x": -25.700000000000003,
+          "z": 17.32,
+          "rotation": 3.141592653589793,
+          "zone": "south-west",
+          "position": [
+            -25.700000000000003,
+            0.27,
+            17.32
+          ],
+          "actualRotation": [
+            -3.141592653589793,
+            1.2246467991473532e-16,
+            -3.141592653589793
+          ],
+          "actualFront": [
+            1.2246467991473532e-16,
+            0,
+            -1
+          ]
+        },
+        {
+          "name": "森田家",
+          "instance": "townhouse_3",
+          "asset": "townhouse",
+          "x": -18.000000000000004,
+          "z": 17.12,
+          "rotation": 3.141592653589793,
+          "zone": "south-west",
+          "position": [
+            -18.000000000000004,
+            0.27,
+            17.12
+          ],
+          "actualRotation": [
+            -3.141592653589793,
+            1.2246467991473532e-16,
+            -3.141592653589793
+          ],
+          "actualFront": [
+            1.2246467991473532e-16,
+            0,
+            -1
+          ]
+        },
+        {
+          "name": "雨守神社",
+          "instance": "shrine_1",
+          "asset": "shrine",
+          "x": 13,
+          "z": 17.2,
+          "rotation": 3.141592653589793,
+          "zone": "south-east",
+          "position": [
+            13,
+            0.27,
+            17.2
+          ],
+          "actualRotation": [
+            -3.141592653589793,
+            1.2246467991473532e-16,
+            -3.141592653589793
+          ],
+          "actualFront": [
+            1.2246467991473532e-16,
+            0,
+            -1
+          ]
+        },
+        {
+          "name": "森田家",
+          "instance": "townhouse_4",
+          "asset": "townhouse",
+          "x": 20.099999999999998,
+          "z": 17.32,
+          "rotation": 3.141592653589793,
+          "zone": "south-east",
+          "position": [
+            20.099999999999998,
+            0.27,
+            17.32
+          ],
+          "actualRotation": [
+            -3.141592653589793,
+            1.2246467991473532e-16,
+            -3.141592653589793
+          ],
+          "actualFront": [
+            1.2246467991473532e-16,
+            0,
+            -1
+          ]
+        }
+      ],
+      "jsonMeshes": 1877,
+      "jsonTextures": 246,
+      "jsonImages": 246,
+      "embeddedImages": 246,
+      "externalImageURIs": [],
+      "externalBufferURIs": [],
+      "bounds": {
+        "min": [
+          -41,
+          -0.8000000059604645,
+          -26
+        ],
+        "max": [
+          48,
+          10.770000457763672,
+          26
+        ],
+        "size": [
+          89,
+          11.570000463724137,
+          52
+        ]
+      },
+      "rendered": {
+        "calls": 2125,
+        "triangles": 649279,
+        "lines": 10488,
+        "nonBackgroundPixels": 300294,
+        "viewportPixels": 1260000,
+        "pixelCoverage": 0.23832857142857142,
+        "width": 1400,
+        "height": 900
+      },
+      "checks": {
+        "finiteNonzeroBounds": true,
+        "finiteVertexPositions": true,
+        "containsGeometry": true,
+        "texturesDecoded": true,
+        "selfContained": true,
+        "districtMetresYUp": true,
+        "declares33Instances": true,
+        "layoutMetadataMatchesManifest": true,
+        "instanceNodesMatchManifest": true,
+        "actualInstanceTransformsMatch": true,
+        "fullDistrictWidth": true,
+        "fullDistrictDepth": true,
+        "districtPosition": true,
+        "substantialVisibleGeometry": true,
+        "visibleGeometry": true
+      },
+      "passed": true
+    },
+    "errors": [],
+    "resourceErrors": [],
+    "progress": "complete",
+    "manifest": {
+      "version": "2.0.0",
+      "units": "metres",
+      "upAxis": "+Y",
+      "frontAxis": "+Z",
+      "origin": "front-centre-ground",
+      "expectedAssets": 26,
+      "expectedInstances": 33,
+      "combined": "雨町完整街区.glb"
+    },
+    "finished": "2026-09-28T01:23:10.152Z",
+    "passed": true
+  },
+  "screenshots": [
+    "qa/glb-district-readback.png",
+    "qa/glb-contact-sheet.png"
+  ],
+  "finished": "2026-09-28T01:23:10.851Z",
+  "passed": true
+}

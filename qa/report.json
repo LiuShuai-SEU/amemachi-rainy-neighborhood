@@ -1,0 +1,1978 @@
+{
+  "target": "http://127.0.0.1:4196/",
+  "offline": false,
+  "started": "2026-09-28T01:14:58.617Z",
+  "checks": [
+    {
+      "name": "33 placed buildings and 26 unique assets",
+      "pass": true,
+      "details": {
+        "buildings": 33,
+        "assets": [
+          "ramen",
+          "izakaya",
+          "wagashi",
+          "florist",
+          "bookstore",
+          "barber",
+          "laundry",
+          "sento",
+          "bakery",
+          "produce",
+          "fishmonger",
+          "deli",
+          "sushi",
+          "curry",
+          "convenience",
+          "cafe",
+          "pharmacy",
+          "record",
+          "cycle",
+          "arcade",
+          "apartment",
+          "townhouse",
+          "clinic",
+          "post",
+          "closedshop",
+          "shrine"
+        ]
+      }
+    },
+    {
+      "name": "all source bounds and footprints are finite and nondegenerate",
+      "pass": true,
+      "details": [
+        {
+          "id": "sento_1",
+          "asset": "sento",
+          "bounds": {
+            "min": [
+              -36.205,
+              0.27000000089406967,
+              -11.583454482451081
+            ],
+            "max": [
+              -28.394999999999996,
+              9.670000003576279,
+              -4.1300000107288355
+            ]
+          },
+          "footprint": {
+            "min": [
+              -36,
+              0.27,
+              -11.1
+            ],
+            "max": [
+              -28.599999999999998,
+              5.77,
+              -5.1
+            ]
+          }
+        },
+        {
+          "id": "wagashi_1",
+          "asset": "wagashi",
+          "bounds": {
+            "min": [
+              -28.157999999374148,
+              0.2699999618530273,
+              -9.814000002145766
+            ],
+            "max": [
+              -22.142000000625842,
+              4.825000000894071,
+              -4.077999999999999
+            ]
+          },
+          "footprint": {
+            "min": [
+              -27.949999999999996,
+              0.27,
+              -9.579999999999998
+            ],
+            "max": [
+              -22.349999999999994,
+              4.83,
+              -4.9799999999999995
+            ]
+          }
+        },
+        {
+          "id": "produce_1",
+          "asset": "produce",
+          "bounds": {
+            "min": [
+              -21.85000004768371,
+              0.26999995231628415,
+              -10.464516660392283
+            ],
+            "max": [
+              -15.94999995231628,
+              6.1699999995529655,
+              -4.335299999925494
+            ]
+          },
+          "footprint": {
+            "min": [
+              -21.699999999999996,
+              0.27,
+              -10.18
+            ],
+            "max": [
+              -16.099999999999994,
+              6.17,
+              -5.18
+            ]
+          }
+        },
+        {
+          "id": "fishmonger_1",
+          "asset": "fishmonger",
+          "bounds": {
+            "min": [
+              -15.59999995231628,
+              0.26999995231628415,
+              -10.354516660392283
+            ],
+            "max": [
+              -10.500000047683711,
+              4.069999998658895,
+              -4.069999999999999
+            ]
+          },
+          "footprint": {
+            "min": [
+              -15.449999999999996,
+              0.27,
+              -10.07
+            ],
+            "max": [
+              -10.649999999999995,
+              4.07,
+              -4.869999999999999
+            ]
+          }
+        },
+        {
+          "id": "ramen_1",
+          "asset": "ramen",
+          "bounds": {
+            "min": [
+              5.739999961853027,
+              0.2699999618530273,
+              -9.940000028610228
+            ],
+            "max": [
+              10.660000038146972,
+              4.269999999105931,
+              -4.225000001192092
+            ]
+          },
+          "footprint": {
+            "min": [
+              5.799999999999999,
+              0.27,
+              -9.899999999999999
+            ],
+            "max": [
+              10.6,
+              4.27,
+              -5.1
+            ]
+          }
+        },
+        {
+          "id": "izakaya_1",
+          "asset": "izakaya",
+          "bounds": {
+            "min": [
+              11.057000000625848,
+              0.2699999046325683,
+              -10.404000002145766
+            ],
+            "max": [
+              17.242999999374153,
+              7.02500000089407,
+              -4.0889999999999995
+            ]
+          },
+          "footprint": {
+            "min": [
+              11.25,
+              0.27,
+              -10.18
+            ],
+            "max": [
+              17.05,
+              7.029999999999999,
+              -4.9799999999999995
+            ]
+          }
+        },
+        {
+          "id": "curry_1",
+          "asset": "curry",
+          "bounds": {
+            "min": [
+              17.555000019073486,
+              0.26999995231628415,
+              -10.264516660392283
+            ],
+            "max": [
+              22.344999980926513,
+              6.66999999988079,
+              -4.397000000178814
+            ]
+          },
+          "footprint": {
+            "min": [
+              17.7,
+              0.27,
+              -9.98
+            ],
+            "max": [
+              22.2,
+              6.67,
+              -5.18
+            ]
+          }
+        },
+        {
+          "id": "sushi_1",
+          "asset": "sushi",
+          "bounds": {
+            "min": [
+              22.650000000894067,
+              0.26999995231628415,
+              -10.354516660392283
+            ],
+            "max": [
+              28.04999999910593,
+              4.769999998658897,
+              -4.15000000655651
+            ]
+          },
+          "footprint": {
+            "min": [
+              22.849999999999998,
+              0.27,
+              -10.07
+            ],
+            "max": [
+              27.849999999999998,
+              4.77,
+              -4.869999999999999
+            ]
+          }
+        },
+        {
+          "id": "arcade_1",
+          "asset": "arcade",
+          "bounds": {
+            "min": [
+              28.410000002384184,
+              0.2699999046325683,
+              -11.27100000026822
+            ],
+            "max": [
+              34.794999999612564,
+              7.45500000655651,
+              -4.5969999999999995
+            ]
+          },
+          "footprint": {
+            "min": [
+              28.499999999999996,
+              0.27,
+              -11.16
+            ],
+            "max": [
+              34.5,
+              7.470000000000001,
+              -5.159999999999999
+            ]
+          }
+        },
+        {
+          "id": "convenience_1",
+          "asset": "convenience",
+          "bounds": {
+            "min": [
+              35.060000002384186,
+              0.2699999761581422,
+              -11.11100000026822
+            ],
+            "max": [
+              43.44499999961257,
+              4.355000006556511,
+              -4.38
+            ]
+          },
+          "footprint": {
+            "min": [
+              35.15,
+              0.27,
+              -11
+            ],
+            "max": [
+              43.15,
+              4.369999999999999,
+              -5
+            ]
+          }
+        },
+        {
+          "id": "barber_1",
+          "asset": "barber",
+          "bounds": {
+            "min": [
+              -37.055,
+              0.27000000089406967,
+              4.619000004529953
+            ],
+            "max": [
+              -31.959000004529955,
+              4.19250000089407,
+              9.950000047683716
+            ]
+          },
+          "footprint": {
+            "min": [
+              -37,
+              0.27,
+              5.1
+            ],
+            "max": [
+              -32.2,
+              4.2,
+              9.899999999999999
+            ]
+          }
+        },
+        {
+          "id": "laundry_1",
+          "asset": "laundry",
+          "bounds": {
+            "min": [
+              -31.55000000357628,
+              0.27000000089406967,
+              4.564999992847442
+            ],
+            "max": [
+              -25.549999996423722,
+              4.170000005960464,
+              10.703454482451082
+            ]
+          },
+          "footprint": {
+            "min": [
+              -31.55,
+              0.27,
+              5.22
+            ],
+            "max": [
+              -25.55,
+              4.17,
+              10.219999999999999
+            ]
+          }
+        },
+        {
+          "id": "cycle_1",
+          "asset": "cycle",
+          "bounds": {
+            "min": [
+              -25.19499999961257,
+              0.27,
+              4.151999999135732
+            ],
+            "max": [
+              -18.78499999046326,
+              4.247956543142075,
+              10.43100000026822
+            ]
+          },
+          "footprint": {
+            "min": [
+              -24.900000000000002,
+              0.27,
+              5.02
+            ],
+            "max": [
+              -18.900000000000002,
+              4.470000000000001,
+              10.32
+            ]
+          }
+        },
+        {
+          "id": "pharmacy_1",
+          "asset": "pharmacy",
+          "bounds": {
+            "min": [
+              -18.54499999961257,
+              0.27000000089406967,
+              4.510000000670552
+            ],
+            "max": [
+              -12.56000000238419,
+              6.755000006556511,
+              10.441000000268222
+            ]
+          },
+          "footprint": {
+            "min": [
+              -18.250000000000004,
+              0.27,
+              5.33
+            ],
+            "max": [
+              -12.650000000000002,
+              6.77,
+              10.33
+            ]
+          }
+        },
+        {
+          "id": "record_1",
+          "asset": "record",
+          "bounds": {
+            "min": [
+              -12.294999999612573,
+              0.27000000089406967,
+              4.166
+            ],
+            "max": [
+              -7.310000002384189,
+              6.755000006556511,
+              9.95100000026822
+            ]
+          },
+          "footprint": {
+            "min": [
+              -12.000000000000004,
+              0.27,
+              5.04
+            ],
+            "max": [
+              -7.400000000000003,
+              6.77,
+              9.84
+            ]
+          }
+        },
+        {
+          "id": "florist_1",
+          "asset": "florist",
+          "bounds": {
+            "min": [
+              5.710000038146973,
+              0.2699999997019768,
+              4.074999999850988
+            ],
+            "max": [
+              11.289999961853027,
+              4.063000001460313,
+              9.924999904632568
+            ]
+          },
+          "footprint": {
+            "min": [
+              5.799999999999999,
+              0.27,
+              5.1
+            ],
+            "max": [
+              11.2,
+              4.07,
+              9.899999999999999
+            ]
+          }
+        },
+        {
+          "id": "bakery_1",
+          "asset": "bakery",
+          "bounds": {
+            "min": [
+              11.650000000894067,
+              0.26999995231628415,
+              4.510000006556511
+            ],
+            "max": [
+              17.24999999910593,
+              6.869999998658897,
+              10.904516660392284
+            ]
+          },
+          "footprint": {
+            "min": [
+              11.849999999999998,
+              0.27,
+              5.22
+            ],
+            "max": [
+              17.05,
+              6.869999999999999,
+              10.620000000000001
+            ]
+          }
+        },
+        {
+          "id": "deli_1",
+          "asset": "deli",
+          "bounds": {
+            "min": [
+              17.539999961853027,
+              0.26999995231628415,
+              4.242637239838303
+            ],
+            "max": [
+              22.460000038146973,
+              6.370000005960465,
+              10.304516660392283
+            ]
+          },
+          "footprint": {
+            "min": [
+              17.7,
+              0.27,
+              5.02
+            ],
+            "max": [
+              22.3,
+              6.369999999999999,
+              10.02
+            ]
+          }
+        },
+        {
+          "id": "bookstore_1",
+          "asset": "bookstore",
+          "bounds": {
+            "min": [
+              22.701499999865888,
+              0.27000000089406967,
+              4.414
+            ],
+            "max": [
+              27.710000038146973,
+              6.855154718977905,
+              10.530000047683716
+            ]
+          },
+          "footprint": {
+            "min": [
+              22.95,
+              0.27,
+              5.33
+            ],
+            "max": [
+              27.55,
+              6.869999999999999,
+              10.33
+            ]
+          }
+        },
+        {
+          "id": "cafe_1",
+          "asset": "cafe",
+          "bounds": {
+            "min": [
+              27.905000000387428,
+              0.26999999833106997,
+              4.156399992704391
+            ],
+            "max": [
+              34.11500010490417,
+              6.985000001788139,
+              10.351000000268222
+            ]
+          },
+          "footprint": {
+            "min": [
+              28.199999999999996,
+              0.27,
+              5.04
+            ],
+            "max": [
+              34,
+              7.27,
+              10.24
+            ]
+          }
+        },
+        {
+          "id": "apartment_1",
+          "asset": "apartment",
+          "bounds": {
+            "min": [
+              -36.04900000080467,
+              0.27000009536743086,
+              -24.07500000014901
+            ],
+            "max": [
+              -28.005000000000003,
+              10.770000001192093,
+              -16.229000000223518
+            ]
+          },
+          "footprint": {
+            "min": [
+              -36,
+              0.27,
+              -23.5
+            ],
+            "max": [
+              -28.200000000000003,
+              10.77,
+              -17
+            ]
+          }
+        },
+        {
+          "id": "townhouse_1",
+          "asset": "townhouse",
+          "bounds": {
+            "min": [
+              -27.2899999986589,
+              0.2699999475479127,
+              -22.817000000104308
+            ],
+            "max": [
+              -21.972999999895695,
+              7.170000001490116,
+              -15.851000000111757
+            ]
+          },
+          "footprint": {
+            "min": [
+              -27.05,
+              0.27,
+              -22.38
+            ],
+            "max": [
+              -22.250000000000004,
+              7.17,
+              -16.88
+            ]
+          }
+        },
+        {
+          "id": "closedshop_1",
+          "asset": "closedshop",
+          "bounds": {
+            "min": [
+              -21.354999998658897,
+              0.26999999046325707,
+              -22.34999994277954
+            ],
+            "max": [
+              -16.022999999895696,
+              6.570000001490117,
+              -16.269674730198457
+            ]
+          },
+          "footprint": {
+            "min": [
+              -21.1,
+              0.27,
+              -22.08
+            ],
+            "max": [
+              -16.300000000000004,
+              6.57,
+              -17.08
+            ]
+          }
+        },
+        {
+          "id": "clinic_1",
+          "asset": "clinic",
+          "bounds": {
+            "min": [
+              -15.349000000000002,
+              0.2699998664855965,
+              -22.627000000104307
+            ],
+            "max": [
+              -8.351,
+              9.46999999642372,
+              -15.83338390027778
+            ]
+          },
+          "footprint": {
+            "min": [
+              -15.150000000000002,
+              0.27,
+              -22.27
+            ],
+            "max": [
+              -8.55,
+              9.469999999999999,
+              -16.77
+            ]
+          }
+        },
+        {
+          "id": "apartment_2",
+          "asset": "apartment",
+          "bounds": {
+            "min": [
+              6.4509999991953375,
+              0.27000009536743086,
+              -24.27500000014901
+            ],
+            "max": [
+              14.495000000000001,
+              10.770000001192093,
+              -16.429000000223517
+            ]
+          },
+          "footprint": {
+            "min": [
+              6.5,
+              0.27,
+              -23.7
+            ],
+            "max": [
+              14.3,
+              10.77,
+              -17.2
+            ]
+          }
+        },
+        {
+          "id": "townhouse_2",
+          "asset": "townhouse",
+          "bounds": {
+            "min": [
+              15.310000001341104,
+              0.2699999475479127,
+              -23.017000000104307
+            ],
+            "max": [
+              20.627000000104307,
+              7.170000001490116,
+              -16.051000000111756
+            ]
+          },
+          "footprint": {
+            "min": [
+              15.549999999999999,
+              0.27,
+              -22.58
+            ],
+            "max": [
+              20.349999999999998,
+              7.17,
+              -17.08
+            ]
+          }
+        },
+        {
+          "id": "apartment_3",
+          "asset": "apartment",
+          "bounds": {
+            "min": [
+              21.550999999195334,
+              0.27000009536743086,
+              -24.35500000014901
+            ],
+            "max": [
+              29.594999999999995,
+              10.770000001192093,
+              -16.509000000223516
+            ]
+          },
+          "footprint": {
+            "min": [
+              21.599999999999998,
+              0.27,
+              -23.779999999999998
+            ],
+            "max": [
+              29.399999999999995,
+              10.77,
+              -17.279999999999998
+            ]
+          }
+        },
+        {
+          "id": "closedshop_2",
+          "asset": "closedshop",
+          "bounds": {
+            "min": [
+              30.395000001341103,
+              0.26999999046325707,
+              -22.23999994277954
+            ],
+            "max": [
+              35.72700000010431,
+              6.570000001490117,
+              -16.159674730198457
+            ]
+          },
+          "footprint": {
+            "min": [
+              30.65,
+              0.27,
+              -21.97
+            ],
+            "max": [
+              35.449999999999996,
+              6.57,
+              -16.97
+            ]
+          }
+        },
+        {
+          "id": "post_1",
+          "asset": "post",
+          "bounds": {
+            "min": [
+              -36.287000000104314,
+              0.2699999997019768,
+              16.25000000834465
+            ],
+            "max": [
+              -30.715000001341103,
+              4.670000001490115,
+              22.4
+            ]
+          },
+          "footprint": {
+            "min": [
+              -36,
+              0.27,
+              17.2
+            ],
+            "max": [
+              -31,
+              4.67,
+              22.2
+            ]
+          }
+        },
+        {
+          "id": "apartment_4",
+          "asset": "apartment",
+          "bounds": {
+            "min": [
+              -29.795,
+              0.27000009536743086,
+              16.54900000022352
+            ],
+            "max": [
+              -21.75099999919534,
+              10.770000001192093,
+              24.39500000014901
+            ]
+          },
+          "footprint": {
+            "min": [
+              -29.600000000000005,
+              0.27,
+              17.32
+            ],
+            "max": [
+              -21.800000000000004,
+              10.77,
+              23.82
+            ]
+          }
+        },
+        {
+          "id": "townhouse_3",
+          "asset": "townhouse",
+          "bounds": {
+            "min": [
+              -20.67700000010431,
+              0.2699999475479127,
+              16.09100000011176
+            ],
+            "max": [
+              -15.360000001341108,
+              7.170000001490116,
+              23.05700000010431
+            ]
+          },
+          "footprint": {
+            "min": [
+              -20.400000000000006,
+              0.27,
+              17.12
+            ],
+            "max": [
+              -15.600000000000003,
+              7.17,
+              22.62
+            ]
+          }
+        },
+        {
+          "id": "shrine_1",
+          "asset": "shrine",
+          "bounds": {
+            "min": [
+              10.422507845996492,
+              0.2849999991059303,
+              17.034999995231626
+            ],
+            "max": [
+              15.541843467622362,
+              4.969999995231628,
+              22.159999999105928
+            ]
+          },
+          "footprint": {
+            "min": [
+              10.5,
+              0.27,
+              17.2
+            ],
+            "max": [
+              15.5,
+              4.970000000000001,
+              22.2
+            ]
+          }
+        },
+        {
+          "id": "townhouse_4",
+          "asset": "townhouse",
+          "bounds": {
+            "min": [
+              17.42299999989569,
+              0.2699999475479127,
+              16.291000000111758
+            ],
+            "max": [
+              22.73999999865889,
+              7.170000001490116,
+              23.25700000010431
+            ]
+          },
+          "footprint": {
+            "min": [
+              17.699999999999996,
+              0.27,
+              17.32
+            ],
+            "max": [
+              22.499999999999996,
+              7.17,
+              22.82
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "architectural footprints do not overlap in XZ",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "main street z +/-3.4 and cross street x +/-4 remain clear",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "view button overview switches state and camera",
+      "pass": true,
+      "details": {
+        "state": {
+          "current": "overview",
+          "active": "true",
+          "city": true,
+          "street": true,
+          "solo": false
+        },
+        "camera": {
+          "position": [
+            98.05015789676416,
+            100.79425167670533,
+            120.33656459588164
+          ],
+          "target": [
+            3.500000000000001,
+            4.525000000000001,
+            0
+          ],
+          "distance": 180.79930850375135
+        }
+      }
+    },
+    {
+      "name": "view button shopping switches state and camera",
+      "pass": true,
+      "details": {
+        "state": {
+          "current": "shopping",
+          "active": "true",
+          "city": true,
+          "street": true,
+          "solo": false
+        },
+        "camera": {
+          "position": [
+            -28.000000000000007,
+            5.399999999999995,
+            1.7000000000000024
+          ],
+          "target": [
+            24,
+            2.8,
+            -0.39999999999999997
+          ],
+          "distance": 52.10729315556509
+        }
+      }
+    },
+    {
+      "name": "view button junction switches state and camera",
+      "pass": true,
+      "details": {
+        "state": {
+          "current": "junction",
+          "active": "true",
+          "city": true,
+          "street": true,
+          "solo": false
+        },
+        "camera": {
+          "position": [
+            22.000000000000004,
+            15.000000000000004,
+            19.999999999999996
+          ],
+          "target": [
+            2,
+            2,
+            -2
+          ],
+          "distance": 32.449961479175904
+        }
+      }
+    },
+    {
+      "name": "view button lane switches state and camera",
+      "pass": true,
+      "details": {
+        "state": {
+          "current": "lane",
+          "active": "true",
+          "city": true,
+          "street": true,
+          "solo": false
+        },
+        "camera": {
+          "position": [
+            -27,
+            5.400000000000004,
+            -13.400000000000004
+          ],
+          "target": [
+            24,
+            3.1,
+            -14.100000000000001
+          ],
+          "distance": 51.0566352201161
+        }
+      }
+    },
+    {
+      "name": "view button reverse switches state and camera",
+      "pass": true,
+      "details": {
+        "state": {
+          "current": "reverse",
+          "active": "true",
+          "city": true,
+          "street": true,
+          "solo": false
+        },
+        "camera": {
+          "position": [
+            -92.55451286052316,
+            102.32595854889631,
+            -117.88508396518752
+          ],
+          "target": [
+            3.500000000000001,
+            4.525000000000001,
+            0
+          ],
+          "distance": 180.79930850375135
+        }
+      }
+    },
+    {
+      "name": "asset selector ramen builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:ramen",
+        "selected": "ramen",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "ramen",
+        "bounds": {
+          "min": [
+            -2.4600000381469727,
+            0.3099999618530282,
+            -4.84000002861023
+          ],
+          "max": [
+            2.4600000381469727,
+            4.30999999910593,
+            0.875
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector izakaya builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:izakaya",
+        "selected": "izakaya",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "izakaya",
+        "bounds": {
+          "min": [
+            -3.0929999993741513,
+            0.30999990463256694,
+            -5.423999786376953
+          ],
+          "max": [
+            3.0929999993741513,
+            7.065000114440918,
+            0.891
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector wagashi builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:wagashi",
+        "selected": "wagashi",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "wagashi",
+        "bounds": {
+          "min": [
+            -3.0079999993741513,
+            0.3099999618530282,
+            -4.834000110626221
+          ],
+          "max": [
+            3.0079999993741513,
+            4.864999828338623,
+            0.902
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector florist builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:florist",
+        "selected": "florist",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "花と葉 — 独立花店",
+        "bounds": {
+          "min": [
+            -2.7899999618530273,
+            0.3099999997019768,
+            -4.824999904632568
+          ],
+          "max": [
+            2.7899999618530273,
+            4.102999982833862,
+            1.0250000001490116
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector bookstore builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:bookstore",
+        "selected": "bookstore",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "月灯古書 — 二階建て旧書店",
+        "bounds": {
+          "min": [
+            -2.4600000381469727,
+            0.31000000089406965,
+            -5.200000047683716
+          ],
+          "max": [
+            2.5485000610351562,
+            6.89515453338623,
+            0.916
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector barber builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:barber",
+        "selected": "barber",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "理容みどり — 薄荷色理髪店",
+        "bounds": {
+          "min": [
+            -2.6410000324249268,
+            0.31000000089406965,
+            -4.850000047683716
+          ],
+          "max": [
+            2.4549999237060547,
+            4.232499895095825,
+            0.48100000619888306
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector laundry builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:laundry",
+        "selected": "laundry",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "雨町コインランドリー",
+        "bounds": {
+          "min": [
+            -3,
+            0.31000000089406965,
+            -5.483454482451082
+          ],
+          "max": [
+            3,
+            4.210000095367431,
+            0.6550000071525574
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector sento builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:sento",
+        "selected": "sento",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "雨町湯",
+        "bounds": {
+          "min": [
+            -3.9049999713897705,
+            0.31000000089406965,
+            -6.483454482451082
+          ],
+          "max": [
+            3.9049999713897705,
+            9.71000000357628,
+            0.9699999892711639
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector bakery builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:bakery",
+        "selected": "bakery",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "bakery",
+        "bounds": {
+          "min": [
+            -2.7999999991059306,
+            0.30999995231628347,
+            -5.684516660392285
+          ],
+          "max": [
+            2.7999999991059306,
+            6.909999904632568,
+            0.7099999934434891
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector produce builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:produce",
+        "selected": "produce",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "produce",
+        "bounds": {
+          "min": [
+            -2.950000047683716,
+            0.3099999523162842,
+            -5.284516660392285
+          ],
+          "max": [
+            2.950000047683716,
+            6.209999999552965,
+            0.8446999788284302
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector fishmonger builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:fishmonger",
+        "selected": "fishmonger",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "fishmonger",
+        "bounds": {
+          "min": [
+            -2.549999952316284,
+            0.3099999523162842,
+            -5.484516660392285
+          ],
+          "max": [
+            2.549999952316284,
+            4.109999998658895,
+            0.8
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector deli builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:deli",
+        "selected": "deli",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "deli",
+        "bounds": {
+          "min": [
+            -2.4600000381469727,
+            0.30999995231628347,
+            -5.284516660392285
+          ],
+          "max": [
+            2.4600000381469727,
+            6.409999904632568,
+            0.777362760161696
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector sushi builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:sushi",
+        "selected": "sushi",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "sushi",
+        "bounds": {
+          "min": [
+            -2.6999999991059305,
+            0.30999995231628347,
+            -5.484516660392285
+          ],
+          "max": [
+            2.6999999991059305,
+            4.81,
+            0.7199999934434891
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector curry builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:curry",
+        "selected": "curry",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "curry",
+        "bounds": {
+          "min": [
+            -2.3949999809265137,
+            0.30999995231628347,
+            -5.084516660392285
+          ],
+          "max": [
+            2.3949999809265137,
+            6.70999999988079,
+            0.7829999998211861
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector convenience builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:convenience",
+        "selected": "convenience",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "24時間 青葉マート / 转角便利店",
+        "bounds": {
+          "min": [
+            -4.090000152587891,
+            0.30999997615814223,
+            -6.111000061035156
+          ],
+          "max": [
+            4.295000076293945,
+            4.395000006556511,
+            0.62
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector cafe builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:cafe",
+        "selected": "cafe",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "珈琲 月舟 / 昭和喫茶",
+        "bounds": {
+          "min": [
+            -3.015000104904175,
+            0.30999999833106995,
+            -5.310999870300293
+          ],
+          "max": [
+            3.194999933242798,
+            7.02500015258789,
+            0.8835999965667725
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector pharmacy builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:pharmacy",
+        "selected": "pharmacy",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "あおぞら薬局 / 街角药局",
+        "bounds": {
+          "min": [
+            -2.890000104904175,
+            0.31000000089406965,
+            -5.111000061035156
+          ],
+          "max": [
+            3.0950000286102295,
+            6.79500000655651,
+            0.8199999928474426
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector record builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:record",
+        "selected": "record",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "港レコード / 黑胶唱片店",
+        "bounds": {
+          "min": [
+            -2.390000104904175,
+            0.31000000089406965,
+            -4.910999774932861
+          ],
+          "max": [
+            2.5950000286102295,
+            6.79500000655651,
+            0.874
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector cycle builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:cycle",
+        "selected": "cycle",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "山田サイクル / 自行车维修",
+        "bounds": {
+          "min": [
+            -3.115000009536743,
+            0.31,
+            -5.410999774932861
+          ],
+          "max": [
+            3.2950000762939453,
+            4.2879565334320064,
+            0.8680000305175781
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector arcade builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:arcade",
+        "selected": "arcade",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "ゲーム コスモ / 社区游戏厅",
+        "bounds": {
+          "min": [
+            -3.0899999141693115,
+            0.30999990463256694,
+            -6.111000061035156
+          ],
+          "max": [
+            3.2950000762939453,
+            7.49500000655651,
+            0.563
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector apartment builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:apartment",
+        "selected": "apartment",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "apartment",
+        "bounds": {
+          "min": [
+            -3.9489998817443848,
+            0.3100000953674309,
+            -7.074999809265137
+          ],
+          "max": [
+            4.09499979019165,
+            10.81,
+            0.7710000276565552
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector townhouse builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:townhouse",
+        "selected": "townhouse",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "townhouse",
+        "bounds": {
+          "min": [
+            -2.6399999986588956,
+            0.3099999475479127,
+            -5.936999797821045
+          ],
+          "max": [
+            2.677000045776367,
+            7.210000095367431,
+            1.0290000438690186
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector clinic builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:clinic",
+        "selected": "clinic",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "clinic",
+        "bounds": {
+          "min": [
+            -3.499000072479248,
+            0.30999986648559563,
+            -5.85699987411499
+          ],
+          "max": [
+            3.499000072479248,
+            9.509999809265137,
+            0.9366161227226257
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector post builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:post",
+        "selected": "post",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "post",
+        "bounds": {
+          "min": [
+            -2.7849999986588956,
+            0.3099999997019768,
+            -5.2
+          ],
+          "max": [
+            2.7869999408721924,
+            4.710000095367431,
+            0.9499999916553498
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector closedshop builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:closedshop",
+        "selected": "closedshop",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "closedshop",
+        "bounds": {
+          "min": [
+            -2.6549999986588957,
+            0.3099999904632571,
+            -5.269999942779541
+          ],
+          "max": [
+            2.677000045776367,
+            6.610000190734863,
+            0.8103252649307251
+          ]
+        }
+      }
+    },
+    {
+      "name": "asset selector shrine builds an independent finite model",
+      "pass": true,
+      "details": {
+        "current": "asset:shrine",
+        "selected": "shrine",
+        "city": false,
+        "street": false,
+        "solo": true,
+        "model": "shrine",
+        "bounds": {
+          "min": [
+            -2.5418434143066406,
+            0.3249999987334013,
+            -4.960000038146973
+          ],
+          "max": [
+            2.5774922370910645,
+            5.009999995231628,
+            0.16500000655651093
+          ]
+        }
+      }
+    },
+    {
+      "name": "pointer drag rotates the scene camera",
+      "pass": true,
+      "details": {
+        "before": {
+          "position": [
+            98.05015789676416,
+            100.79425167670533,
+            120.33656459588164
+          ],
+          "target": [
+            3.500000000000001,
+            4.525000000000001,
+            0
+          ],
+          "distance": 180.79930850375135
+        },
+        "after": {
+          "position": [
+            4.947891210674367,
+            78.36038358352356,
+            165.02917832174626
+          ],
+          "target": [
+            3.500000000000001,
+            4.525000000000001,
+            0
+          ],
+          "distance": 180.79930850375155
+        }
+      }
+    },
+    {
+      "name": "mouse wheel changes camera distance",
+      "pass": true,
+      "details": {
+        "before": 180.79930850375155,
+        "after": 148.78065461372418
+      }
+    },
+    {
+      "name": "rain begins enabled with actual visible geometry",
+      "pass": true,
+      "details": {
+        "wet": true,
+        "visible": true,
+        "pressed": "true",
+        "time": 8.255952000000002,
+        "sample": [
+          -8.065719604492188,
+          2.831507444381714,
+          21.821977615356445,
+          -8.079719543457031,
+          3.068448543548584,
+          21.83197593688965,
+          -9.716991424560547,
+          12.553502082824707,
+          -23.287857055664062,
+          -9.73099136352539,
+          12.853392601013184,
+          -23.27785873413086
+        ]
+      }
+    },
+    {
+      "name": "rain button hides geometry",
+      "pass": true,
+      "details": {
+        "wet": false,
+        "visible": false,
+        "pressed": "false",
+        "time": 9.006752000000011,
+        "sample": [
+          -8.065719604492188,
+          15.68793773651123,
+          21.821977615356445,
+          -8.079719543457031,
+          15.92487907409668,
+          21.83197593688965,
+          -9.716991424560547,
+          6.686771869659424,
+          -23.287857055664062,
+          -9.73099136352539,
+          6.986661434173584,
+          -23.27785873413086
+        ]
+      }
+    },
+    {
+      "name": "rain resumes and positions animate",
+      "pass": true,
+      "details": {
+        "resumed": {
+          "wet": true,
+          "visible": true,
+          "pressed": "true",
+          "time": 9.724052000000016,
+          "sample": [
+            -8.065719604492188,
+            10.869407653808594,
+            21.821977615356445,
+            -8.079719543457031,
+            11.106348037719727,
+            21.83197593688965,
+            -9.716991424560547,
+            1.0818090438842773,
+            -23.287857055664062,
+            -9.73099136352539,
+            1.3816989660263062,
+            -23.27785873413086
+          ]
+        },
+        "animated": {
+          "wet": true,
+          "visible": true,
+          "pressed": "true",
+          "time": 10.00775200000002,
+          "sample": [
+            -8.065719604492188,
+            8.96362590789795,
+            21.821977615356445,
+            -8.079719543457031,
+            9.200567245483398,
+            21.83197593688965,
+            -9.716991424560547,
+            16.764984130859375,
+            -23.287857055664062,
+            -9.73099136352539,
+            17.06487464904785,
+            -23.27785873413086
+          ]
+        }
+      }
+    },
+    {
+      "name": "WebGL draws substantial triangle geometry",
+      "pass": true,
+      "details": {
+        "frame": 4112,
+        "calls": 18404,
+        "triangles": 5237816,
+        "points": 0,
+        "lines": 112704,
+        "memory": {
+          "geometries": 2089,
+          "textures": 461
+        }
+      }
+    },
+    {
+      "name": "desktop full district solid geometry fits screen",
+      "pass": true,
+      "details": {
+        "objects": 1824,
+        "pointCount": 14592,
+        "invalid": 0,
+        "min": [
+          -0.5546256656372661,
+          -0.627213238678044,
+          0.9983963544892943
+        ],
+        "max": [
+          0.5918334060771491,
+          0.39157323998518406,
+          0.9991617338645163
+        ]
+      }
+    },
+    {
+      "name": "mobile full district solid geometry fits screen",
+      "pass": true,
+      "details": {
+        "objects": 1824,
+        "pointCount": 14592,
+        "invalid": 0,
+        "min": [
+          -0.8470024929844772,
+          -0.2606311362977102,
+          0.9996276390420594
+        ],
+        "max": [
+          0.8736784295772683,
+          0.2016111942603898,
+          0.9997949084999701
+        ]
+      }
+    },
+    {
+      "name": "no uncaught page errors",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "no browser console errors",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "no failed requests",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "scene requests no remote resources",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "requestFailures": [],
+  "screenshots": [
+    "desktop.png",
+    "mobile.png"
+  ],
+  "browser": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+  "finalState": {
+    "current": "overview",
+    "wet": true,
+    "time": 11.642652000000028,
+    "frames": 284,
+    "buildings": 33,
+    "assets": 26,
+    "drawCalls": 1,
+    "triangles": 1,
+    "rainSample": [
+      -8.065719604492188,
+      15.881031036376953,
+      21.821977615356445,
+      -8.079719543457031,
+      16.117971420288086,
+      21.83197593688965,
+      -9.716991424560547,
+      3.9899208545684814,
+      -23.287857055664062,
+      -9.73099136352539,
+      4.289810657501221,
+      -23.27785873413086
+    ]
+  },
+  "passed": true,
+  "finished": "2026-09-28T01:15:16.936Z"
+}
